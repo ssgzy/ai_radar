@@ -164,3 +164,12 @@ python run_once.py --max-items 2
 - V2 已达到“可打分、可排序、可标签化”的标准
 - 当前评分是启发式规则版本，已经适合做第一轮筛选，但还不是最终版智能排序
 - V3 应转向多源扩展与 merge / dedupe
+
+## V3 本轮计划
+
+1. 新增 `RSSCollector`
+2. 新增 `HackerNewsCollector`
+3. 新增 `NewsCollector`
+4. 在 `config/sources.yaml` 中加入真实默认源
+5. 实现 merge / dedupe，产出 deduped JSON
+6. 用真实多源数据跑一次 V3，并写入 [[版本迭代记录]]
