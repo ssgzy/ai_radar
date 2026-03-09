@@ -1,0 +1,17 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 环境变量
+.env
+
+# 运行缓存
+.runtime/
+data/cache/
+
+# 日志
+logs/*.log
+logs/runs/*.log
+
+# 临时系统文件
+.DS_Store

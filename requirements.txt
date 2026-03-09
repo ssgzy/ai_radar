@@ -1,0 +1,7 @@
+arxiv
+requests
+feedparser
+python-dotenv
+PyYAML
+rich
+pytest

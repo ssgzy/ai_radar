@@ -1,0 +1,17 @@
+【内容概述】
+这条信息是关于一个 GitHub 仓库，名为 ed-donner/llm_engineering，它是与作者学习 LLM（语言模型）工程课程的相关资源。
+
+【解决的问题】
+这个仓库试图帮助用户学习 LLM 工程，提供了与课程相关的资源，包括 Jupyter Notebook。
+
+【为什么值得关注】
+值得关注，因为它可以提供有价值的资源，帮助用户学习 LLM 工程，这在 AI 领域是一个热门和重要的话题。
+
+【适合我关注的原因】
+作为个人 AI 情报系统使用者，如果你有兴趣学习或了解 LLM 工程，这个仓库可能对你有帮助。
+
+【关键词】
+LLM 工程，Jupyter Notebook，AI 学习资源
+
+【简洁引用】
+"Repo to accompany my mastering LLM engineering course"

@@ -1,0 +1,110 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "该文章研究了多模态大语言模型（Multimodal Large Language Models，MLLM）在图像分类任务中的表现，并探讨了其评估协议和真实标签质量对其表现的影响。",
+    "problem_cn": "该文章试图解决多模态大语言模型在图像分类任务中的表现存在不一致的问题，并且揭示了这些不一致的原因是由于不适当的评估协议和低质量的真实标签所导致的。",
+    "why_it_matters_cn": "该文章值得关注，因为它揭示了多模态大语言模型在图像分类任务中的表现可能是由于不适当的评估协议和低质量的真实标签所导致的误导性结果，而不是模型本身的缺陷。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，该文章值得关注，因为它可以帮助我了解多模态大语言模型在图像分类任务中的表现，并且提供了一些可以改善其表现的建议。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "表现"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类任务中的表现可能是由于不适当的评估协议和低质量的真实标签所导致的误导性结果\"。",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "arxiv",
+    "item_id": "2603.06577v1",
+    "title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
+    "url": "http://arxiv.org/abs/2603.06577v1",
+    "published_at": "2026-03-06T18:59:57+00:00",
+    "authors": [
+      "Lijiang Li",
+      "Zuwei Long",
+      "Yunhang Shen",
+      "Heting Gao",
+      "Haoyu Cao",
+      "Xing Sun",
+      "Caifeng Shan",
+      "Ran He",
+      "Chaoyou Fu"
+    ],
+    "raw_content": "While recent multimodal large language models (MLLMs) have made impressive strides, they predominantly employ a conventional autoregressive architecture as their backbone, leaving significant room to explore effective and efficient alternatives in architectural design. Concurrently, recent studies have successfully applied discrete diffusion models to various domains, such as visual understanding and image generation, revealing their considerable potential as a promising backbone for multimodal systems. Drawing inspiration from these pioneering research, we introduce Omni-Diffusion, the first any-to-any multimodal language model built entirely on mask-based discrete diffusion models, which unifies understanding and generation across text, speech, and images. Omni-Diffusion employs a unified mask-based discrete diffusion model to directly capture the joint distribution over discrete multimodal tokens. This approach supports not only bimodal tasks but also more complex scenarios involving multiple modalities. On a diverse set of benchmarks, our method outperforms or performs on par with existing multimodal systems that process two or more modalities, highlighting the significant promise of diffusion models in powering the next generation of multimodal foundation models. Project webpage: https://omni-diffusion.github.io.",
+    "content_overview_cn": "该文章介绍了一种名为 Omni-Diffusion 的多模态语言模型，它是基于掩码式离散漫步模型构建的，可以跨模态理解和生成文本、语音和图像。",
+    "problem_cn": "该文章试图解决多模态大语言模型（MLLMs）的架构设计方面的问题，目前主要使用的是传统的自回归架构，作者认为存在大量可以探索的有效和高效替代方案。同时，该文章还应用了离散漫步模型到多个领域，如视觉理解和图像生成，表明这种模型具有潜在的巨大潜力作为多模态系统的基础。",
+    "why_it_matters_cn": "该文章值得关注，因为它提出了一种新的多模态语言模型，可以直接捕捉多模态离散令牌的联合分布，支持二模态任务以及涉及多个模态的更复杂场景。在多种测试集上，该方法表现出超越或与现有多模态系统相当的性能，高亮了离散漫步模型在培训下一代多模态基础模型的潜在潜力。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该文章，因为它提供了一种新的多模态理解和生成方法，可以帮助我们更好地理解和处理多种类型的数据，从而提高我们的 AI 系统的性能和灵活性。",
+    "keywords": [
+      "离散漫步模型",
+      "多模态理解",
+      "多模态生成",
+      "语言模型",
+      "视觉理解",
+      "图像生成。"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"First any-to-any multimodal language model built entirely on mask-based discrete diffusion models.\"",
+    "score_breakdown": {
+      "novelty": 9.7,
+      "execution_signal": 6.8,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.5,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.5。新颖性较强（9.7）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_arxiv_2603.06577v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_arxiv_2603.06577v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06577v1",
+      "comment": "Project page: https://omni-diffusion.github.io",
+      "primary_category": "cs.CV"
+    }
+  }
+]

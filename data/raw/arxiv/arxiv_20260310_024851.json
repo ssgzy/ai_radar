@@ -1,0 +1,45 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "arxiv",
+    "item_id": "2603.06577v1",
+    "title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
+    "url": "http://arxiv.org/abs/2603.06577v1",
+    "published_at": "2026-03-06T18:59:57+00:00",
+    "authors": [
+      "Lijiang Li",
+      "Zuwei Long",
+      "Yunhang Shen",
+      "Heting Gao",
+      "Haoyu Cao",
+      "Xing Sun",
+      "Caifeng Shan",
+      "Ran He",
+      "Chaoyou Fu"
+    ],
+    "content": "While recent multimodal large language models (MLLMs) have made impressive strides, they predominantly employ a conventional autoregressive architecture as their backbone, leaving significant room to explore effective and efficient alternatives in architectural design. Concurrently, recent studies have successfully applied discrete diffusion models to various domains, such as visual understanding and image generation, revealing their considerable potential as a promising backbone for multimodal systems. Drawing inspiration from these pioneering research, we introduce Omni-Diffusion, the first any-to-any multimodal language model built entirely on mask-based discrete diffusion models, which unifies understanding and generation across text, speech, and images. Omni-Diffusion employs a unified mask-based discrete diffusion model to directly capture the joint distribution over discrete multimodal tokens. This approach supports not only bimodal tasks but also more complex scenarios involving multiple modalities. On a diverse set of benchmarks, our method outperforms or performs on par with existing multimodal systems that process two or more modalities, highlighting the significant promise of diffusion models in powering the next generation of multimodal foundation models. Project webpage: https://omni-diffusion.github.io.",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06577v1",
+      "comment": "Project page: https://omni-diffusion.github.io",
+      "primary_category": "cs.CV"
+    }
+  }
+]

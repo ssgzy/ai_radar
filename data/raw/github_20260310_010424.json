@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Abhi4091-art/ESG-AI-Agent",
+    "description": null,
+    "url": "https://github.com/Abhi4091-art/ESG-AI-Agent",
+    "stars": 0,
+    "language": null,
+    "updated_at": "2026-03-09T17:04:18Z"
+  },
+  {
+    "name": "Mouslim91/yolium",
+    "description": "🤖 Automate project workflows with Yolium, featuring a Kanban board and parallel agent orchestration for efficient task management and collaboration.",
+    "url": "https://github.com/Mouslim91/yolium",
+    "stars": 0,
+    "language": "HTML",
+    "updated_at": "2026-03-09T17:04:18Z"
+  },
+  {
+    "name": "RobertoAthos/caramelbot",
+    "description": "Personal agentic bot",
+    "url": "https://github.com/RobertoAthos/caramelbot",
+    "stars": 0,
+    "language": "Python",
+    "updated_at": "2026-03-09T17:04:18Z"
+  },
+  {
+    "name": "SkylineTZ/RagaliQ",
+    "description": "🏷️ Automate PR metadata generation by inferring labels, assignees, and milestones from branch names and commit history for smoother GitHub workflows.",
+    "url": "https://github.com/SkylineTZ/RagaliQ",
+    "stars": 0,
+    "language": "Python",
+    "updated_at": "2026-03-09T17:04:17Z"
+  },
+  {
+    "name": "puyanguvic/Argis",
+    "description": "AI Agent for Phish Email detection.",
+    "url": "https://github.com/puyanguvic/Argis",
+    "stars": 1,
+    "language": "Python",
+    "updated_at": "2026-03-09T17:04:17Z"
+  },
+  {
+    "name": "dohko04/awesome-ai-prompts-for-devs",
+    "description": "🚀 Curated collection of AI prompts that actually work for software developers. Free samples from the AI Developer Toolkit.",
+    "url": "https://github.com/dohko04/awesome-ai-prompts-for-devs",
+    "stars": 0,
+    "language": null,
+    "updated_at": "2026-03-09T17:04:18Z"
+  },
+  {
+    "name": "EtherlandCertificates/did-etherland",
+    "description": "W3C DID Core v1.0 conformant method specification for did:etherland — a chain-agnostic EVM decentralized identifier method with hierarchical submethods. Includes root method spec (W3C submission), mylegacy submethod (cultural heritage, Avalanche C-Chain), and kya submethod (Know Your Agent payment verification, BSC). Built by Etherland.",
+    "url": "https://github.com/EtherlandCertificates/did-etherland",
+    "stars": 0,
+    "language": null,
+    "updated_at": "2026-03-09T17:04:13Z"
+  },
+  {
+    "name": "cser245086272/ComfyUI-FL-Qwen3TTS",
+    "description": "🎤 Create realistic text-to-speech outputs with advanced voice cloning and design using Alibaba's Qwen3-TTS model for ComfyUI.",
+    "url": "https://github.com/cser245086272/ComfyUI-FL-Qwen3TTS",
+    "stars": 0,
+    "language": null,
+    "updated_at": "2026-03-09T17:04:11Z"
+  },
+  {
+    "name": "Kiu-Q/hikari-archive",
+    "description": "💚👥 Integrated with OpenClaw, you-owned Agent Companion, a interface of your waifu, cyber livings to bring them into our worlds. Web / macOS / Windows supported.",
+    "url": "https://github.com/Kiu-Q/hikari-archive",
+    "stars": 0,
+    "language": "JavaScript",
+    "updated_at": "2026-03-09T17:04:10Z"
+  },
+  {
+    "name": "StevenSongAI/nox-work-tracker",
+    "description": "Nox Work Tracker - Agent activity monitoring dashboard",
+    "url": "https://github.com/StevenSongAI/nox-work-tracker",
+    "stars": 0,
+    "language": "HTML",
+    "updated_at": "2026-03-09T17:04:07Z"
+  }
+]

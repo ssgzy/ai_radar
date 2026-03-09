@@ -1,0 +1,20 @@
+[
+  {
+    "source": "github",
+    "item_id": "1112160661",
+    "title": "OpenLoaf/OpenLoaf",
+    "url": "https://github.com/OpenLoaf/OpenLoaf",
+    "published_at": "2026-03-09T13:56:22Z",
+    "authors": [
+      "OpenLoaf"
+    ],
+    "content": "仓库名称：OpenLoaf/OpenLoaf\n仓库描述：🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端\n主要语言：TypeScript\nStars：19",
+    "extra": {
+      "description": "🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 1,
+      "open_issues": 0
+    }
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容讨论了多模式大语言模型（Multimodal Large Language Models，MLLM）在图像分类任务中的表现，并提出了解决评估协议和真实标签质量对其表现的关键影响因素。",
+    "problem_cn": "该文试图解决多模式大语言模型在图像分类任务中的表现问题，并提出了解决评估协议和真实标签质量对其表现的关键影响因素。",
+    "why_it_matters_cn": "该文重要的原因是，它揭示了多模式大语言模型在图像分类任务中的表现可能受到评估协议和真实标签质量的影响，并提出了解决这些问题的方法。这对于了解和改善多模式大语言模型在图像分类任务中的表现具有重要意义。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该文，因为它对于了解和改善多模式大语言模型在图像分类任务中的表现具有重要意义，并提供了解决这些问题的方法。",
+    "keywords": [
+      "多模式大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "表现"
+    ],
+    "quote_cn": "“多模式大语言模型在图像分类任务中的表现可能受到评估协议和真实标签质量的影响”。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021607_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021607_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1112160661",
+    "title": "OpenLoaf/OpenLoaf",
+    "url": "https://github.com/OpenLoaf/OpenLoaf",
+    "published_at": "2026-03-09T13:56:22Z",
+    "authors": [
+      "OpenLoaf"
+    ],
+    "raw_content": "仓库名称：OpenLoaf/OpenLoaf\n仓库描述：🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端\n主要语言：TypeScript\nStars：19",
+    "content_overview_cn": "OpenLoaf 是一个开源、本地优先的 AI 工作台，提供智能代理、多模型对话（包括 GPT、Claude、Gemini 和 DeepSeek）、文档管理、AI 图像和视频生成、邮件、日历和终端等功能。数据不会离开用户的设备。",
+    "problem_cn": "OpenLoaf 试图解决 AI 工作流程的集成和管理问题，提供一个单一的平台，用户可以在其中进行多模型对话、文档管理、AI 图像和视频生成、邮件、日历和终端操作等。",
+    "why_it_matters_cn": "OpenLoaf 的本地优先设计可以帮助用户保护数据隐私，并且提供了一个集成了多种 AI 模型的工作台，可以方便用户进行多模型对话和 AI 生成任务。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，OpenLoaf 可以帮助我管理和集成多种 AI 模型，并且数据不会离开我的设备，可以保护我的数据隐私。",
+    "keywords": [
+      "AI 工作台",
+      "智能代理",
+      "多模型对话",
+      "文档管理",
+      "AI 生图/视频",
+      "邮件",
+      "日历",
+      "终端",
+      "本地优先",
+      "数据隐私"
+    ],
+    "quote_cn": "\"一个单一的平台，集成了多种 AI 模型，并且数据不会离开用户的设备。\"",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - OpenLoaf OpenLoaf.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021607_github_1112160661_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021607_github_1112160661_response.txt",
+    "extra": {
+      "description": "🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 1,
+      "open_issues": 0
+    }
+  }
+]

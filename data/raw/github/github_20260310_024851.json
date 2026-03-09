@@ -1,0 +1,38 @@
+[
+  {
+    "source": "github",
+    "item_id": "1174844464",
+    "title": "RandomJword/f5",
+    "url": "https://github.com/RandomJword/f5",
+    "published_at": "2026-03-09T18:49:25Z",
+    "authors": [
+      "RandomJword"
+    ],
+    "content": "仓库名称：RandomJword/f5\n仓库描述：Facts in Five, Reimagined — 5 categories × 5 letters × 5 minutes. AI-judged by Claude.\n主要语言：HTML\nStars：0",
+    "extra": {
+      "description": "Facts in Five, Reimagined — 5 categories × 5 letters × 5 minutes. AI-judged by Claude.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "850490697",
+    "title": "ed-donner/llm_engineering",
+    "url": "https://github.com/ed-donner/llm_engineering",
+    "published_at": "2026-03-09T18:49:24Z",
+    "authors": [
+      "ed-donner"
+    ],
+    "content": "仓库名称：ed-donner/llm_engineering\n仓库描述：Repo to accompany my mastering LLM engineering course\n主要语言：Jupyter Notebook\nStars：5183",
+    "extra": {
+      "description": "Repo to accompany my mastering LLM engineering course",
+      "language": "Jupyter Notebook",
+      "stars": 5183,
+      "forks": 5010,
+      "open_issues": 264
+    }
+  }
+]

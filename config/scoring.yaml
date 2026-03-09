@@ -1,0 +1,115 @@
+scoring:
+  dimensions:
+    novelty:
+      label: 新颖性
+      weight: 0.35
+      max_score: 10
+    execution_signal:
+      label: 落地信号
+      weight: 0.3
+      max_score: 10
+    personal_relevance:
+      label: 个人相关性
+      weight: 0.35
+      max_score: 10
+  thresholds:
+    high_priority: 8.0
+    watchlist: 6.5
+    skim: 5.0
+  interest_keywords:
+    strong:
+      - agent
+      - agents
+      - llm
+      - large language model
+      - multimodal
+      - evaluation
+      - benchmark
+      - local-first
+      - local ai
+      - automation
+      - workflow
+      - research
+    medium:
+      - dataset
+      - inference
+      - open-source
+      - github
+      - coding
+      - developer
+      - terminal
+      - memory
+      - ranking
+      - retrieval
+  novelty_keywords:
+    - new
+    - novel
+    - first
+    - reannotation
+    - benchmark
+    - evaluate
+    - evaluation
+    - multimodal
+    - local-first
+    - open-world
+    - dataset
+    - agent
+  execution_keywords:
+    - open-source
+    - repository
+    - demo
+    - implementation
+    - code
+    - local-first
+    - production
+    - workflow
+    - benchmark
+    - evaluation
+tagging:
+  topics:
+    Agent:
+      - agent
+      - agents
+      - multi-agent
+      - autonomous
+      - workflow
+    大模型:
+      - llm
+      - large language model
+      - gpt
+      - claude
+      - gemini
+      - deepseek
+    多模态:
+      - multimodal
+      - vision-language
+      - image
+      - video
+      - classifier
+    评测与基准:
+      - benchmark
+      - evaluation
+      - evaluate
+      - imagenet
+      - ground truth
+    本地 AI:
+      - local-first
+      - local ai
+      - on-device
+      - your data never leaves
+    开发工具:
+      - developer
+      - terminal
+      - coding
+      - docs
+      - refactoring
+      - repository
+    自动化:
+      - automation
+      - scheduling
+      - pipeline
+      - workflow
+      - orchestration
+  source_tags:
+    arxiv: 论文
+    github: GitHub 项目

@@ -1,0 +1,34 @@
+[
+  {
+    "source": "github",
+    "item_id": "1167373314",
+    "title": "chamithusithmaka/refactoring-decision-agent-prototype",
+    "url": "https://github.com/chamithusithmaka/refactoring-decision-agent-prototype",
+    "published_at": "2026-02-27T07:59:32Z",
+    "authors": [
+      "chamithusithmaka"
+    ],
+    "raw_content": "",
+    "content_overview_cn": "** 这条内容是关于一个名为 Refactoring Decision Agent Prototype 的项目的介绍，它是一个重构决策代理人的原型。 **",
+    "problem_cn": "** 这个项目试图解决软件开发中的重构问题，特别是在大规模系统中，重构决策是一个复杂且耗时的过程。 **",
+    "why_it_matters_cn": "** 这个项目有可能提供一种自动化的方法来帮助开发人员更好地管理和优化他们的软件系统。 **",
+    "why_follow_cn": "** 作为个人 AI 情报系统使用者，如果你有兴趣了解如何自动化软件重构决策，或者想了解最新的软件开发技术，那么这个项目值得关注。 **",
+    "keywords": [
+      "** 软件重构",
+      "自动化",
+      "大规模系统",
+      "开发人员 **"
+    ],
+    "quote_cn": "** \"自动化软件重构决策\"",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021418_github_1167373314_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021418_github_1167373314_response.txt",
+    "extra": {
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "该文章研究了多模态大语言模型（Multimodal Large Language Models，MLLM）在图像分类任务中的表现，并探讨了其评估协议和真实标签质量对其表现的影响。",
+    "problem_cn": "该文章试图解决多模态大语言模型在图像分类任务中的表现存在不一致的问题，并且揭示了这些不一致的原因是由于不适当的评估协议和低质量的真实标签所导致的。",
+    "why_it_matters_cn": "该文章值得关注，因为它揭示了多模态大语言模型在图像分类任务中的表现可能是由于不适当的评估协议和低质量的真实标签所导致的误导性结果，而不是模型本身的缺陷。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，该文章值得关注，因为它可以帮助我了解多模态大语言模型在图像分类任务中的表现，并且提供了一些可以改善其表现的建议。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "表现"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类任务中的表现可能是由于不适当的评估协议和低质量的真实标签所导致的误导性结果\"。",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "arxiv",
+    "item_id": "2603.06577v1",
+    "title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
+    "url": "http://arxiv.org/abs/2603.06577v1",
+    "published_at": "2026-03-06T18:59:57+00:00",
+    "authors": [
+      "Lijiang Li",
+      "Zuwei Long",
+      "Yunhang Shen",
+      "Heting Gao",
+      "Haoyu Cao",
+      "Xing Sun",
+      "Caifeng Shan",
+      "Ran He",
+      "Chaoyou Fu"
+    ],
+    "raw_content": "While recent multimodal large language models (MLLMs) have made impressive strides, they predominantly employ a conventional autoregressive architecture as their backbone, leaving significant room to explore effective and efficient alternatives in architectural design. Concurrently, recent studies have successfully applied discrete diffusion models to various domains, such as visual understanding and image generation, revealing their considerable potential as a promising backbone for multimodal systems. Drawing inspiration from these pioneering research, we introduce Omni-Diffusion, the first any-to-any multimodal language model built entirely on mask-based discrete diffusion models, which unifies understanding and generation across text, speech, and images. Omni-Diffusion employs a unified mask-based discrete diffusion model to directly capture the joint distribution over discrete multimodal tokens. This approach supports not only bimodal tasks but also more complex scenarios involving multiple modalities. On a diverse set of benchmarks, our method outperforms or performs on par with existing multimodal systems that process two or more modalities, highlighting the significant promise of diffusion models in powering the next generation of multimodal foundation models. Project webpage: https://omni-diffusion.github.io.",
+    "content_overview_cn": "该文章介绍了一种名为 Omni-Diffusion 的多模态语言模型，它是基于掩码式离散漫步模型构建的，可以跨模态理解和生成文本、语音和图像。",
+    "problem_cn": "该文章试图解决多模态大语言模型（MLLMs）的架构设计方面的问题，目前主要使用的是传统的自回归架构，作者认为存在大量可以探索的有效和高效替代方案。同时，该文章还应用了离散漫步模型到多个领域，如视觉理解和图像生成，表明这种模型具有潜在的巨大潜力作为多模态系统的基础。",
+    "why_it_matters_cn": "该文章值得关注，因为它提出了一种新的多模态语言模型，可以直接捕捉多模态离散令牌的联合分布，支持二模态任务以及涉及多个模态的更复杂场景。在多种测试集上，该方法表现出超越或与现有多模态系统相当的性能，高亮了离散漫步模型在培训下一代多模态基础模型的潜在潜力。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该文章，因为它提供了一种新的多模态理解和生成方法，可以帮助我们更好地理解和处理多种类型的数据，从而提高我们的 AI 系统的性能和灵活性。",
+    "keywords": [
+      "离散漫步模型",
+      "多模态理解",
+      "多模态生成",
+      "语言模型",
+      "视觉理解",
+      "图像生成。"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"First any-to-any multimodal language model built entirely on mask-based discrete diffusion models.\"",
+    "score_breakdown": {
+      "novelty": 9.7,
+      "execution_signal": 6.8,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.5,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.5。新颖性较强（9.7）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Omni-Diffusion Unified Multimodal Understanding and Generation with Masked Discrete Diffusion.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_arxiv_2603.06577v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_arxiv_2603.06577v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06577v1",
+      "comment": "Project page: https://omni-diffusion.github.io",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1174844464",
+    "title": "RandomJword/f5",
+    "url": "https://github.com/RandomJword/f5",
+    "published_at": "2026-03-09T18:49:25Z",
+    "authors": [
+      "RandomJword"
+    ],
+    "raw_content": "仓库名称：RandomJword/f5\n仓库描述：Facts in Five, Reimagined — 5 categories × 5 letters × 5 minutes. AI-judged by Claude.\n主要语言：HTML\nStars：0",
+    "content_overview_cn": "这条信息是关于一个 GitHub 仓库的介绍，仓库名称是 RandomJword/f5，仓库描述是 \"Facts in Five, Reimagined\"，意为重新设想五个类别、五个字母、五分钟的事实。它被 Claude AI 评估。",
+    "problem_cn": "这个仓库试图解决了如何在短时间内了解广泛的事实的问题，并且使用了 Claude AI 来评估内容的质量。",
+    "why_it_matters_cn": "这个仓库值得关注，因为它可能是一个有用的学习工具，可以帮助用户快速了解各种各样的事实。此外，使用 AI 评估内容的质量是一个有趣的实验，可能会带来有趣的结果。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，这个仓库值得关注，因为它可能会提供有用的学习资源，并且使用了 AI 技术，这可能会带来有趣的实验结果。",
+    "keywords": [
+      "GitHub",
+      "仓库",
+      "Facts in Five",
+      "Claude AI",
+      "事实",
+      "学习",
+      "AI 实验"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "大模型"
+    ],
+    "quote_cn": "\"Facts in Five, Reimagined — 5 categories × 5 letters × 5 minutes. AI-judged by Claude.\"",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 4.4,
+      "personal_relevance": 4.7
+    },
+    "total_score": 5.0,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.0。新颖性较强（5.8）；个人相关性较强（4.7）。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - RandomJword f5.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_github_1174844464_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_github_1174844464_response.txt",
+    "extra": {
+      "description": "Facts in Five, Reimagined — 5 categories × 5 letters × 5 minutes. AI-judged by Claude.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "850490697",
+    "title": "ed-donner/llm_engineering",
+    "url": "https://github.com/ed-donner/llm_engineering",
+    "published_at": "2026-03-09T18:49:24Z",
+    "authors": [
+      "ed-donner"
+    ],
+    "raw_content": "仓库名称：ed-donner/llm_engineering\n仓库描述：Repo to accompany my mastering LLM engineering course\n主要语言：Jupyter Notebook\nStars：5183",
+    "content_overview_cn": "这条信息是关于一个 GitHub 仓库，名为 ed-donner/llm_engineering，它是与作者学习 LLM（语言模型）工程课程的相关资源。",
+    "problem_cn": "这个仓库试图帮助用户学习 LLM 工程，提供了与课程相关的资源，包括 Jupyter Notebook。",
+    "why_it_matters_cn": "值得关注，因为它可以提供有价值的资源，帮助用户学习 LLM 工程，这在 AI 领域是一个热门和重要的话题。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果你有兴趣学习或了解 LLM 工程，这个仓库可能对你有帮助。",
+    "keywords": [
+      "LLM 工程",
+      "Jupyter Notebook",
+      "AI 学习资源"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "大模型",
+      "高星信号"
+    ],
+    "quote_cn": "\"Repo to accompany my mastering LLM engineering course\"",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 8.4,
+      "personal_relevance": 5.8
+    },
+    "total_score": 6.6,
+    "priority_level": "重点关注",
+    "recommendation_cn": "建议加入观察清单，今天至少完成一次快速复盘。",
+    "score_reason_cn": "总分 6.6。落地信号较强（8.4）；新颖性较强（5.8）；GitHub Stars=5183。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - ed-donner llm_engineering.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_024851_github_850490697_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_024851_github_850490697_response.txt",
+    "extra": {
+      "description": "Repo to accompany my mastering LLM engineering course",
+      "language": "Jupyter Notebook",
+      "stars": 5183,
+      "forks": 5010,
+      "open_issues": 264
+    }
+  }
+]

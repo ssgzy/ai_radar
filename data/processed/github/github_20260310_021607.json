@@ -1,0 +1,41 @@
+[
+  {
+    "source": "github",
+    "item_id": "1112160661",
+    "title": "OpenLoaf/OpenLoaf",
+    "url": "https://github.com/OpenLoaf/OpenLoaf",
+    "published_at": "2026-03-09T13:56:22Z",
+    "authors": [
+      "OpenLoaf"
+    ],
+    "raw_content": "仓库名称：OpenLoaf/OpenLoaf\n仓库描述：🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端\n主要语言：TypeScript\nStars：19",
+    "content_overview_cn": "OpenLoaf 是一个开源、本地优先的 AI 工作台，提供智能代理、多模型对话（包括 GPT、Claude、Gemini 和 DeepSeek）、文档管理、AI 图像和视频生成、邮件、日历和终端等功能。数据不会离开用户的设备。",
+    "problem_cn": "OpenLoaf 试图解决 AI 工作流程的集成和管理问题，提供一个单一的平台，用户可以在其中进行多模型对话、文档管理、AI 图像和视频生成、邮件、日历和终端操作等。",
+    "why_it_matters_cn": "OpenLoaf 的本地优先设计可以帮助用户保护数据隐私，并且提供了一个集成了多种 AI 模型的工作台，可以方便用户进行多模型对话和 AI 生成任务。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，OpenLoaf 可以帮助我管理和集成多种 AI 模型，并且数据不会离开我的设备，可以保护我的数据隐私。",
+    "keywords": [
+      "AI 工作台",
+      "智能代理",
+      "多模型对话",
+      "文档管理",
+      "AI 生图/视频",
+      "邮件",
+      "日历",
+      "终端",
+      "本地优先",
+      "数据隐私"
+    ],
+    "quote_cn": "\"一个单一的平台，集成了多种 AI 模型，并且数据不会离开用户的设备。\"",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021607_github_1112160661_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021607_github_1112160661_response.txt",
+    "extra": {
+      "description": "🍞Open-source, local-first AI workspace with Agents, multi-model chat (GPT/Claude/Gemini/DeepSeek), Notion-like docs, AI image & video generation, email, calendar & terminal. Your data never leaves your device. AI 工作台：智能代理 + 多模型对话 + 文档管理 + AI 生图/视频 + 邮件/日历/终端",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 1,
+      "open_issues": 0
+    }
+  }
+]

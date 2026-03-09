@@ -1,0 +1,9 @@
+provider: ollama
+default_model: mistral:7b
+fallback_models:
+  - qwen3.5:9b
+  - deepseek-r1:8b
+request:
+  timeout_seconds: 600
+  temperature: 0.2
+  top_p: 0.9

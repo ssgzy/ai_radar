@@ -1,0 +1,12 @@
+knowledge_base:
+  dashboards_dir: outputs/obsidian/dashboards
+  papers_dir: outputs/obsidian/papers
+  projects_dir: outputs/obsidian/projects
+  inbox_dir: outputs/obsidian/inbox
+  sources_dir: outputs/obsidian/sources
+notes:
+  project_overview: 项目总览
+  current_status: 当前状态
+  session_log: 会话日志
+  version_log: 版本迭代记录
+  result_index: 结果索引

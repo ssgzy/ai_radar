@@ -1,0 +1,70 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容讨论了多模态大语言模型（Multimodal Large Language Models，MLLM）作为图像分类器的性能，其关键因素是评估协议和基准真实数据的质量。",
+    "problem_cn": "该研究试图解决两个问题：第一个是不同评估协议和基准真实数据质量对MLLM的性能产生的冲突结论，第二个是漏报或低质量的基准真实数据对MLLM的性能产生的影响。",
+    "why_it_matters_cn": "该研究值得关注，因为它揭示了多模态大语言模型在图像分类中的性能可能是由于漏报或低质量的基准真实数据和不合理的评估协议所导致的误导性结论。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，该研究值得关注，因为它可以帮助我了解多模态大语言模型在图像分类中的实际性能，并了解如何优化评估协议和基准真实数据以获得更准确的结果。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "基准真实数据",
+      "漏报",
+      "低质量数据"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类中的性能受评估协议和基准真实数据质量影响\"。",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021418_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021418_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1167373314",
+    "title": "chamithusithmaka/refactoring-decision-agent-prototype",
+    "url": "https://github.com/chamithusithmaka/refactoring-decision-agent-prototype",
+    "published_at": "2026-02-27T07:59:32Z",
+    "authors": [
+      "chamithusithmaka"
+    ],
+    "raw_content": "",
+    "content_overview_cn": "** 这条内容是关于一个名为 Refactoring Decision Agent Prototype 的项目的介绍，它是一个重构决策代理人的原型。 **",
+    "problem_cn": "** 这个项目试图解决软件开发中的重构问题，特别是在大规模系统中，重构决策是一个复杂且耗时的过程。 **",
+    "why_it_matters_cn": "** 这个项目有可能提供一种自动化的方法来帮助开发人员更好地管理和优化他们的软件系统。 **",
+    "why_follow_cn": "** 作为个人 AI 情报系统使用者，如果你有兴趣了解如何自动化软件重构决策，或者想了解最新的软件开发技术，那么这个项目值得关注。 **",
+    "keywords": [
+      "** 软件重构",
+      "自动化",
+      "大规模系统",
+      "开发人员 **"
+    ],
+    "quote_cn": "** \"自动化软件重构决策\"",
+    "model_name": "mistral:7b",
+    "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - chamithusithmaka refactoring-decision-agent-prototype.md",
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_021418_github_1167373314_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_021418_github_1167373314_response.txt",
+    "extra": {
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

@@ -1,0 +1,9 @@
+sources:
+  arxiv:
+    enabled: true
+    query: "cat:cs.AI OR cat:cs.LG OR large language model OR agent"
+    max_items: 3
+  github:
+    enabled: true
+    query: "llm OR agent OR ai"
+    max_items: 3

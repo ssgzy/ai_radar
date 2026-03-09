@@ -1,0 +1,32 @@
+{
+  "run_id": "20260310_021607",
+  "run_mode": "once",
+  "completed_at": "2026-03-10T02:16:48+08:00",
+  "sources": [
+    {
+      "source": "arxiv",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/arxiv/arxiv_20260310_021607.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/arxiv/arxiv_20260310_021607.json",
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "github",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/github/github_20260310_021607.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/github/github_20260310_021607.json",
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - OpenLoaf OpenLoaf.md"
+      ],
+      "errors": [],
+      "extra": {}
+    }
+  ],
+  "total_processed": 2
+}

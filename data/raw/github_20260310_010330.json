@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Malumbo1/ai-stock-analyzer",
+    "description": "🤖 Analyze stock data in real time with AI-powered insights for smarter investment decisions across multiple markets.",
+    "url": "https://github.com/Malumbo1/ai-stock-analyzer",
+    "stars": 0,
+    "language": "Python",
+    "updated_at": "2026-03-09T17:03:18Z"
+  },
+  {
+    "name": "Copilotclaw/trainingdemo",
+    "description": "Training demos: RAG, LLMs, and notebooks managed by Crunch 🦃",
+    "url": "https://github.com/Copilotclaw/trainingdemo",
+    "stars": 0,
+    "language": "Jupyter Notebook",
+    "updated_at": "2026-03-09T17:03:18Z"
+  },
+  {
+    "name": "epam/ai-dial-admin-frontend",
+    "description": "A UI for AI DIAL Admin Panel",
+    "url": "https://github.com/epam/ai-dial-admin-frontend",
+    "stars": 9,
+    "language": "TypeScript",
+    "updated_at": "2026-03-09T17:03:13Z"
+  },
+  {
+    "name": "sednabcn/stem-ai-tutoring",
+    "description": "Welcome to stem-ai-tutoring, a curated ecosystem by Dr. Ruperto Pedro Bonet Chaple, designed to showcase my professional expertise and project work in:  AI & LLMs for scientific applications Mathematical tutoring and education Simulation & domain modeling Applied research and consulting",
+    "url": "https://github.com/sednabcn/stem-ai-tutoring",
+    "stars": 0,
+    "language": "JavaScript",
+    "updated_at": "2026-03-09T17:03:15Z"
+  },
+  {
+    "name": "nnaulia/dao-governance-portal",
+    "description": "⚖️ Enable decentralized voting on proposals with a Governance Token in this Ethereum-based DAO Governance Portal.",
+    "url": "https://github.com/nnaulia/dao-governance-portal",
+    "stars": 0,
+    "language": "JavaScript",
+    "updated_at": "2026-03-09T17:03:14Z"
+  },
+  {
+    "name": "leadershop/marksheet-information-extraction-api",
+    "description": "🎓 Extract and validate data from academic marksheets using AI for accurate JSON output, enhancing record-keeping and analysis.",
+    "url": "https://github.com/leadershop/marksheet-information-extraction-api",
+    "stars": 0,
+    "language": "Python",
+    "updated_at": "2026-03-09T17:03:09Z"
+  },
+  {
+    "name": "mellamohan-ai/ai-document-assistant",
+    "description": "AI assistant that answers questions from upload documents using LLM APIs",
+    "url": "https://github.com/mellamohan-ai/ai-document-assistant",
+    "stars": 0,
+    "language": "HTML",
+    "updated_at": "2026-03-09T17:03:04Z"
+  },
+  {
+    "name": "furkha/claude-skill-bog-payment-gateway",
+    "description": "💳 Streamline BOG payment processing with this Claude skill, enabling easy integration, order management, and callback handling for Georgian transactions.",
+    "url": "https://github.com/furkha/claude-skill-bog-payment-gateway",
+    "stars": 0,
+    "language": "TypeScript",
+    "updated_at": "2026-03-09T17:03:03Z"
+  },
+  {
+    "name": "flodus/aria-llm-council",
+    "description": "Architecture de Raisonnement Institutionnel par l'IA. Un système de gouvernance délibérative augmentée. Délibérer. Annoter. Synthétiser. Décider.",
+    "url": "https://github.com/flodus/aria-llm-council",
+    "stars": 0,
+    "language": "JavaScript",
+    "updated_at": "2026-03-09T17:03:00Z"
+  },
+  {
+    "name": "addin10/audit-assistant-playbook",
+    "description": "🔍 Structure smart contract audits with this playbook guiding experienced auditors in using LLMs for effective analysis and documentation.",
+    "url": "https://github.com/addin10/audit-assistant-playbook",
+    "stars": 0,
+    "language": null,
+    "updated_at": "2026-03-09T17:03:01Z"
+  }
+]
