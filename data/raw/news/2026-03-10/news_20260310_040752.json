@@ -1,0 +1,19 @@
+[
+  {
+    "source": "news",
+    "item_id": "752c5043c9ed400c",
+    "title": "Anthropic launches code review tool to check flood of AI-generated code",
+    "url": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/",
+    "published_at": "2026-03-09T19:41:34+00:00",
+    "authors": [
+      "Rebecca Bellan"
+    ],
+    "content": "Anthropic launched Code Review in Claude Code, a multi-agent system that automatically analyzes AI-generated code, flags logic errors, and helps enterprise developers manage the growing volume of code produced with AI.",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100624",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

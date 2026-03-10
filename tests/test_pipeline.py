@@ -26,8 +26,11 @@ def test_pipeline_enabled_sources_filters_requested_sources(tmp_path):
         class paths:  # noqa: N801
             """最小路径占位。"""
 
+            project_root = Path(tmp_path)
             raw_dir = Path(tmp_path / "raw")
             processed_dir = Path(tmp_path / "processed")
+            logs_dir = Path(tmp_path / "logs")
+            outputs_dir = Path(tmp_path / "outputs")
             obsidian_output_dir = Path(tmp_path / "obsidian")
             debug_dir = Path(tmp_path / "debug")
             state_dir = Path(tmp_path / "state")

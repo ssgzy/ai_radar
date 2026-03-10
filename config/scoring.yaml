@@ -104,12 +104,92 @@ tagging:
       - docs
       - refactoring
       - repository
+      - code review
+      - codex
     自动化:
       - automation
       - scheduling
       - pipeline
       - workflow
       - orchestration
+    语音与音频:
+      - speech
+      - audio
+      - voice
+      - multilingual
+      - asr
+      - tts
   source_tags:
     arxiv: 论文
     github: GitHub 项目
+    rss: RSS 订阅
+    news: 新闻站点
+    hackernews: Hacker News
+quality_gate:
+  keep_all_sources:
+    - arxiv
+    - github
+  source_min_scores:
+    rss: 4.2
+    news: 5.0
+    hackernews: 5.6
+  preferred_topic_tags:
+    - Agent
+    - 大模型
+    - 多模态
+    - 评测与基准
+    - 本地 AI
+    - 开发工具
+    - 自动化
+    - 语音与音频
+  blocked_title_keywords:
+    - podcast
+    - webinar
+    - giveaway
+    - hiring
+    - sponsor
+  blocked_body_keywords:
+    - register now
+    - limited seats
+    - sponsored
+  focus_keywords:
+    strong:
+      - agent
+      - multi-agent
+      - llm
+      - large language model
+      - multimodal
+      - benchmark
+      - evaluation
+      - code review
+      - codex
+      - mcp
+      - ollama
+      - local ai
+      - speech
+      - voice
+    medium:
+      - developer
+      - workflow
+      - terminal
+      - code
+      - audio
+      - reasoning
+      - inference
+      - guardrail
+  minimum_focus_signals:
+    rss: 1
+    news: 1
+    hackernews: 1
+dashboard:
+  topic_priority:
+    - Agent
+    - 开发工具
+    - 自动化
+    - 本地 AI
+    - 多模态
+    - 语音与音频
+    - 评测与基准
+    - 大模型
+  max_topics: 5
+  max_items_per_topic: 4

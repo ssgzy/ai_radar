@@ -4,15 +4,25 @@ from __future__ import annotations
 
 import logging
 import re
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 from rich.console import Console
 
-from src.models import ProcessedItem, RawItem
+from src.models import FailedItemRecord, ProcessedItem, RawItem
 from src.utils.file_ops import write_text
 from src.utils.ollama_client import OllamaClient
-from src.utils.text_utils import normalize_whitespace, truncate_text
+from src.utils.text_utils import normalize_whitespace, safe_filename, truncate_text
+from src.utils.time_utils import date_slug, now_local_iso
+
+
+@dataclass(slots=True)
+class SummarizationResult:
+    """保存批量总结的成功与失败结果。"""
+
+    processed_items: list[ProcessedItem]
+    failed_items: list[FailedItemRecord]
 
 
 class LocalOllamaSummarizer:
@@ -52,10 +62,16 @@ class LocalOllamaSummarizer:
             console=console,
         )
 
-    def summarize_items(self, items: list[RawItem], run_id: str) -> list[ProcessedItem]:
+    def summarize_items(
+        self,
+        items: list[RawItem],
+        run_id: str,
+        archive_date: str | None = None,
+    ) -> SummarizationResult:
         """批量总结多个原始条目。"""
 
         processed_items: list[ProcessedItem] = []
+        failed_items: list[FailedItemRecord] = []
         total = len(items)
 
         for index, item in enumerate(items, start=1):
@@ -64,44 +80,76 @@ class LocalOllamaSummarizer:
                 self.console.print(f"[magenta]开始总结[/magenta] {label}")
             self.logger.info("开始总结 | label=%s", label)
 
-            prompt = self._build_prompt(item=item)
-            prompt_path = self._save_debug_prompt(run_id=run_id, item=item, prompt=prompt)
-
-            response_text, model_name = self.client.generate(prompt=prompt, item_label=label)
-            response_path = self._save_debug_response(
-                run_id=run_id,
-                item=item,
-                response_text=response_text,
-            )
-            sections = self._parse_sections(response_text)
-
-            processed_items.append(
-                ProcessedItem(
-                    source=item.source,
-                    item_id=item.item_id,
-                    title=item.title,
-                    url=item.url,
-                    published_at=item.published_at,
-                    authors=item.authors,
-                    raw_content=item.content,
-                    content_overview_cn=sections.get("内容概述", ""),
-                    problem_cn=sections.get("解决的问题", ""),
-                    why_it_matters_cn=sections.get("为什么值得关注", ""),
-                    why_follow_cn=sections.get("适合我关注的原因", ""),
-                    keywords=self._split_keywords(sections.get("关键词", "")),
-                    quote_cn=sections.get("简洁引用", "无"),
-                    model_name=model_name,
-                    prompt_path=str(prompt_path),
-                    response_path=str(response_path),
-                    extra=item.extra,
+            prompt_path: Path | None = None
+            response_path: Path | None = None
+            try:
+                prompt = self._build_prompt(item=item)
+                prompt_path = self._save_debug_prompt(
+                    run_id=run_id,
+                    item=item,
+                    prompt=prompt,
+                    archive_date=archive_date,
                 )
-            )
 
-            if self.console:
-                self.console.print(f"[green]总结完成[/green] {label} | 模型={model_name}")
-            self.logger.info("总结完成 | label=%s | model=%s", label, model_name)
+                response_text, model_name = self.client.generate(prompt=prompt, item_label=label)
+                response_path = self._save_debug_response(
+                    run_id=run_id,
+                    item=item,
+                    response_text=response_text,
+                    archive_date=archive_date,
+                )
+                sections = self._parse_sections(response_text)
 
-        return processed_items
+                processed_items.append(
+                    ProcessedItem(
+                        source=item.source,
+                        item_id=item.item_id,
+                        title=item.title,
+                        url=item.url,
+                        published_at=item.published_at,
+                        authors=item.authors,
+                        raw_content=item.content,
+                        content_overview_cn=sections.get("内容概述", ""),
+                        problem_cn=sections.get("解决的问题", ""),
+                        why_it_matters_cn=sections.get("为什么值得关注", ""),
+                        why_follow_cn=sections.get("适合我关注的原因", ""),
+                        keywords=self._split_keywords(sections.get("关键词", "")),
+                        quote_cn=sections.get("简洁引用", "无"),
+                        model_name=model_name,
+                        prompt_path=str(prompt_path),
+                        response_path=str(response_path),
+                        extra=item.extra,
+                    )
+                )
+
+                if self.console:
+                    self.console.print(f"[green]总结完成[/green] {label} | 模型={model_name}")
+                self.logger.info("总结完成 | label=%s | model=%s", label, model_name)
+            except Exception as error:  # noqa: BLE001
+                failed_items.append(
+                    FailedItemRecord(
+                        run_id=run_id,
+                        stage="summarize",
+                        source=item.source,
+                        title=item.title,
+                        item_id=item.item_id,
+                        url=item.url,
+                        error=str(error),
+                        created_at=now_local_iso(),
+                        prompt_path=str(prompt_path) if prompt_path else None,
+                        response_path=str(response_path) if response_path else None,
+                        extra={
+                            "raw_item": item.to_dict(),
+                            "source_extra": item.extra,
+                        },
+                    )
+                )
+                if self.console:
+                    self.console.print(f"[red]总结失败[/red] {label} | {truncate_text(str(error), limit=120)}")
+                self.logger.exception("总结失败 | label=%s | error=%s", label, error)
+                logging.getLogger("errors").error("总结失败 | label=%s | error=%s", label, error)
+
+        return SummarizationResult(processed_items=processed_items, failed_items=failed_items)
 
     def _build_prompt(self, item: RawItem) -> str:
         """组装单条内容的总结提示词。"""
@@ -118,17 +166,31 @@ class LocalOllamaSummarizer:
             )
         )
 
-    def _save_debug_prompt(self, run_id: str, item: RawItem, prompt: str) -> Path:
+    def _save_debug_prompt(
+        self,
+        run_id: str,
+        item: RawItem,
+        prompt: str,
+        archive_date: str | None = None,
+    ) -> Path:
         """保存发给模型的 prompt。"""
 
-        filename = f"{run_id}_{item.source}_{item.item_id}_prompt.txt"
-        return write_text(self.debug_prompt_dir / filename, prompt)
+        day = archive_date or date_slug()
+        filename = safe_filename(f"{run_id}_{item.source}_{item.item_id}_prompt.txt", limit=180)
+        return write_text(self.debug_prompt_dir / day / filename, prompt)
 
-    def _save_debug_response(self, run_id: str, item: RawItem, response_text: str) -> Path:
+    def _save_debug_response(
+        self,
+        run_id: str,
+        item: RawItem,
+        response_text: str,
+        archive_date: str | None = None,
+    ) -> Path:
         """保存模型原始返回。"""
 
-        filename = f"{run_id}_{item.source}_{item.item_id}_response.txt"
-        return write_text(self.debug_response_dir / filename, response_text)
+        day = archive_date or date_slug()
+        filename = safe_filename(f"{run_id}_{item.source}_{item.item_id}_response.txt", limit=180)
+        return write_text(self.debug_response_dir / day / filename, response_text)
 
     def _parse_sections(self, response_text: str) -> dict[str, str]:
         """从固定标题文本中提取结构化字段。"""

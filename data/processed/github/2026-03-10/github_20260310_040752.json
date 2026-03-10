@@ -1,0 +1,50 @@
+[
+  {
+    "source": "github",
+    "item_id": "750008068",
+    "title": "dreadnode/rigging",
+    "url": "https://github.com/dreadnode/rigging",
+    "published_at": "2026-03-09T20:07:59Z",
+    "authors": [
+      "dreadnode"
+    ],
+    "raw_content": "仓库名称：dreadnode/rigging\n仓库描述：Lightweight LLM Interaction Framework\n主要语言：Python\nStars：407",
+    "content_overview_cn": "这条信息是关于一个名为 dreadnode/rigging 的 GitHub 仓库，该仓库描述为一个轻量级 LLM 交互框架，主要使用 Python 语言。",
+    "problem_cn": "该仓库试图解决与 LLM（Language Model）的交互方式的开发，提供一个轻量级的框架，以方便更好地与语言模型进行交互。",
+    "why_it_matters_cn": "该仓库值得关注，因为它可以帮助开发者更好地与语言模型进行交互，从而实现更好的应用和效果。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该仓库，因为它可能会带来对 AI 技术的更好理解和应用，从而提高我的工作效率和技能水平。",
+    "keywords": [
+      "LLM 交互框架",
+      "Python",
+      "语言模型",
+      "开发者",
+      "AI 技术"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "大模型",
+      "高星信号"
+    ],
+    "quote_cn": "\"轻量级 LLM 交互框架\"",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 8.4,
+      "personal_relevance": 5.8
+    },
+    "total_score": 6.6,
+    "priority_level": "重点关注",
+    "recommendation_cn": "建议加入观察清单，今天至少完成一次快速复盘。",
+    "score_reason_cn": "总分 6.6。落地信号较强（8.4）；新颖性较强（5.8）；GitHub Stars=407。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_040752_github_750008068_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_040752_github_750008068_response.txt",
+    "extra": {
+      "description": "Lightweight LLM Interaction Framework",
+      "language": "Python",
+      "stars": 407,
+      "forks": 27,
+      "open_issues": 2
+    }
+  }
+]

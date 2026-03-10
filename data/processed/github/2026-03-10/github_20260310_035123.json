@@ -1,0 +1,50 @@
+[
+  {
+    "source": "github",
+    "item_id": "1119268186",
+    "title": "feiniaovpn/Node-Airport-VPN",
+    "url": "https://github.com/feiniaovpn/Node-Airport-VPN",
+    "published_at": "2026-03-09T19:10:04Z",
+    "authors": [
+      "feiniaovpn"
+    ],
+    "raw_content": "仓库名称：feiniaovpn/Node-Airport-VPN\n仓库描述：一款稳定好用的加速器，无限流量 ！适合商务，游戏，看视频，的加速器，更好更安全的保护隐私！\n主要语言：Python\nStars：0",
+    "content_overview_cn": "这条信息是关于一个名为 Node-Airport-VPN 的开源项目的介绍，它是一个使用 Python 编写的加速器，提供无限流量，适合商务、游戏和视频观看。",
+    "problem_cn": "该项目试图解决用户在商务、游戏和视频观看等场景中需要加速器的问题，同时提供更好的隐私保护。",
+    "why_it_matters_cn": "该项目提供无限流量，并且在商务、游戏和视频观看等场景中表现出了良好的性能，同时提供了更好的隐私保护，值得关注。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果需要在商务、游戏或视频观看等场景中加速网络速度，并且希望保护自己的隐私，该项目可能是一个有用的资源，值得关注。",
+    "keywords": [
+      "Node-Airport-VPN",
+      "加速器",
+      "无限流量",
+      "商务",
+      "游戏",
+      "视频",
+      "隐私保护"
+    ],
+    "tags": [
+      "GitHub 项目"
+    ],
+    "quote_cn": "\"无限流量的商务、游戏和视频加速器\"",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 4.4,
+      "personal_relevance": 3.9
+    },
+    "total_score": 4.7,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.7。新颖性较强（5.8）；落地信号较强（4.4）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_035123_github_1119268186_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_035123_github_1119268186_response.txt",
+    "extra": {
+      "description": "一款稳定好用的加速器，无限流量 ！适合商务，游戏，看视频，的加速器，更好更安全的保护隐私！",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

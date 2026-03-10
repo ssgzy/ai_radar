@@ -1,0 +1,17 @@
+【内容概述】
+这是一个 GitOps 存储库，用于 Llama Stack 代理（llama-stack-template-agentic-sample）。
+
+【解决的问题】
+该存储库试图提供一个 GitOps 解决方案，用于管理和部署应用程序。
+
+【为什么值得关注】
+该存储库可能包含有关 GitOps 和 Llama Stack 代理的最新信息和示例，对于想了解或实践 GitOps 和 Llama Stack 的人们来说是有价值的。
+
+【适合我关注的原因】
+作为个人 AI 情报系统使用者，了解 GitOps 和 Llama Stack 的最新进展和示例可以帮助我更好地了解和应用这些技术，从而提高我的工作效率和技能水平。
+
+【关键词】
+GitOps、Llama Stack、代理、示例、应用程序、管理、部署
+
+【简洁引用】
+"GitOps 存储库，用于 Llama Stack 代理"

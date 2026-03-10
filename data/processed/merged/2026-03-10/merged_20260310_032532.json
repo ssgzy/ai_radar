@@ -1,0 +1,234 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容讨论了多模态大语言模型（Multimodal Large Language Models，MLLM）在图像分类任务中的表现，并提出了解决评估协议和真实标签质量对其表现的关键影响因素。",
+    "problem_cn": "该文试图解决多模态大语言模型在图像分类任务中的表现存在的问题，并指出原因在于评估协议和真实标签质量。",
+    "why_it_matters_cn": "该文重要性在于揭示了多模态大语言模型在图像分类任务中的表现存在的问题，并提出了解决方案，同时还展示了这些模型在人工标注任务中的潜力。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该文，因为它揭示了多模态大语言模型在图像分类任务中的表现存在的问题，并提出了解决方案，同时还展示了这些模型在人工标注任务中的潜力，有助于我了解和应用这些模型。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "人工标注"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类任务中的表现存在问题，主要是由于评估协议和真实标签质量的影响。\"",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1140595342",
+    "title": "Aiddrag83/Aiden-Piercey---COMP1054WINTER2026",
+    "url": "https://github.com/Aiddrag83/Aiden-Piercey---COMP1054WINTER2026",
+    "published_at": "2026-03-09T19:25:47Z",
+    "authors": [
+      "Aiddrag83"
+    ],
+    "raw_content": "仓库名称：Aiddrag83/Aiden-Piercey---COMP1054WINTER2026\n仓库描述：仓库暂时没有填写描述。\n主要语言：HTML\nStars：0",
+    "content_overview_cn": "该内容是关于一个 GitHub 仓库，名为 Aiddrag83/Aiden-Piercey---COMP1054WINTER2026，该仓库目前没有填写描述。",
+    "problem_cn": "该仓库可能试图解决或包含有关 COMP1054 的 Winter 2026 学期的资源或代码。",
+    "why_it_matters_cn": "该仓库可能包含有关 COMP1054 课程的实用资源或代码，对于那些正在学习或研究 COMP1054 的人来说可能很有价值。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果你正在学习或研究 COMP1054，该仓库可能包含有用的资源或代码，值得关注。",
+    "keywords": [
+      "COMP1054",
+      "Winter 2026",
+      "GitHub",
+      "仓库",
+      "资源",
+      "代码"
+    ],
+    "tags": [
+      "GitHub 项目"
+    ],
+    "quote_cn": "该仓库可能包含有关 COMP1054 Winter 2026 学期的实用资源或代码。",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 4.4,
+      "personal_relevance": 3.9
+    },
+    "total_score": 4.7,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.7。新颖性较强（5.8）；落地信号较强（4.4）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_github_1140595342_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_github_1140595342_response.txt",
+    "extra": {
+      "description": "仓库暂时没有填写描述。",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 1
+    }
+  },
+  {
+    "source": "rss",
+    "item_id": "ec92a6e121b60abc",
+    "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+    "published_at": "2026-03-09T18:36:33+00:00",
+    "authors": [],
+    "raw_content": "",
+    "content_overview_cn": "IBM 发布了 Granite 4.0 1B 语音技术，这是一种紧凑、多语言、适合边缘计算的语音技术。",
+    "problem_cn": "Granite 4.0 1B 语音技术试图解决语音识别和语音合成的问题，特别是在紧凑设备上实现多语言支持。",
+    "why_it_matters_cn": "这项技术的出现意味着语音技术可以更广泛地应用于各种设备，并且可以支持更多的语言，这对于跨国际界定和实施各种政策和措施具有重要意义。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解新的语音技术可以帮助我更好地了解和分析各种信息源，并且可能会带来新的应用和机会。",
+    "keywords": [
+      "语音识别",
+      "语音合成",
+      "多语言",
+      "边缘计算",
+      "IBM"
+    ],
+    "tags": [
+      "RSS 订阅"
+    ],
+    "quote_cn": "IBM 发布了一种紧凑、多语言、适合边缘计算的语音技术。",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 3.0,
+      "personal_relevance": 3.0
+    },
+    "total_score": 4.0,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.0。新颖性较强（5.8）；落地信号较强（3.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_rss_ec92a6e121b60abc_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_rss_ec92a6e121b60abc_response.txt",
+    "extra": {
+      "entry_id": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+      "feed_name": "Hugging Face Blog",
+      "feed_url": "https://huggingface.co/blog/feed.xml",
+      "source_feed_title": "Hugging Face - Blog"
+    }
+  },
+  {
+    "source": "hackernews",
+    "item_id": "47314036",
+    "title": "AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed",
+    "url": "https://blog.bryanl.dev/posts/ai-senior-engineer-pipeline/",
+    "published_at": "2026-03-09T19:18:25+00:00",
+    "authors": [
+      "dukky"
+    ],
+    "raw_content": "标题：AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed\n文本：无正文\n分数：10\n评论数：0",
+    "content_overview_cn": "这条信息谈论 AI 对高级工程师队伍的影响，并指出高级工程师队伍可能从未存在过。",
+    "problem_cn": "该文章试图解决高级工程师队伍的成员数量和发展问题，并指出 AI 可能不是导致这种情况的原因。",
+    "why_it_matters_cn": "该文章重新审视了高级工程师队伍的构成和发展，提供了一种新的视角，可能会影响我们对该领域的了解和解决方案。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解高级工程师队伍的构成和发展对于我们的 AI 项目和策略至关重要，因此该文章的内容值得关注。",
+    "keywords": [
+      "高级工程师队伍",
+      "AI",
+      "成员数量",
+      "发展问题",
+      "解决方案"
+    ],
+    "tags": [
+      "Hacker News",
+      "自动化"
+    ],
+    "quote_cn": "该文章指出高级工程师队伍可能从未存在过。",
+    "score_breakdown": {
+      "novelty": 6.6,
+      "execution_signal": 3.0,
+      "personal_relevance": 3.5
+    },
+    "total_score": 4.4,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.4。新颖性较强（6.6）；个人相关性较强（3.5）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_hackernews_47314036_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_hackernews_47314036_response.txt",
+    "extra": {
+      "hn_score": 10,
+      "hn_comments": 0,
+      "hn_item_url": "https://news.ycombinator.com/item?id=47314036"
+    }
+  },
+  {
+    "source": "news",
+    "item_id": "b3c5d68296a1d223",
+    "title": "OpenAI acquires Promptfoo to secure its AI agents",
+    "url": "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/",
+    "published_at": "2026-03-09T17:49:04+00:00",
+    "authors": [
+      "Tim Fernholz"
+    ],
+    "raw_content": "This deal underscores how frontier labs are scrambling to prove their technology can be used safely in critical business operations.",
+    "content_overview_cn": "OpenAI 收购 Promptfoo，这表明边缘实验室正在努力证明其技术可以在关键业务操作中安全使用。",
+    "problem_cn": "该行动试图解决如何使 AI 代理在关键业务操作中安全使用的问题，并且通过收购 Promptfoo 来加强自己的技术。",
+    "why_it_matters_cn": "这项新闻值得关注，因为它反映了 AI 技术在企业中的发展趋势，并且 OpenAI 是一家重要的 AI 公司，其行动可能会影响整个 AI 行业。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，你应该关注这项新闻，因为它可能会影响 AI 技术在企业中的应用，并且可能对你的 AI 项目产生影响。",
+    "keywords": [
+      "OpenAI",
+      "Promptfoo",
+      "AI 代理",
+      "关键业务操作",
+      "安全使用。"
+    ],
+    "tags": [
+      "新闻站点",
+      "Agent"
+    ],
+    "quote_cn": "\"Frontier labs are scrambling to prove their technology can be used safely in critical business operations.\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 3.0,
+      "personal_relevance": 6.0
+    },
+    "total_score": 5.5,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.5。新颖性较强（7.1）；个人相关性较强（6.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_news_b3c5d68296a1d223_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_news_b3c5d68296a1d223_response.txt",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100531",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "source": "github",
+    "item_id": "1175494614",
+    "title": "INQUISITIVE-AI/inquisitive-ai-agent",
+    "url": "https://github.com/INQUISITIVE-AI/inquisitive-ai-agent",
+    "published_at": "2026-03-09T20:25:40Z",
+    "authors": [
+      "INQUISITIVE-AI"
+    ],
+    "raw_content": "仓库名称：INQUISITIVE-AI/inquisitive-ai-agent\n仓库描述：INQAI Platform - AI-powered DeFi yield optimization with mainnet smart contracts\n主要语言：TypeScript\nStars：0",
+    "content_overview_cn": "这条信息是关于一个名为 INQAI Platform 的 AI 加密货币 DeFi 利润优化平台的介绍，该平台使用主网智能合约。",
+    "problem_cn": "该平台试图帮助用户优化 DeFi 利润，通过 AI 技术自动化交易和利润优化。",
+    "why_it_matters_cn": "该平台使用 AI 技术来自动化 DeFi 交易，可能会带来更高的利润和更好的交易效率。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果你对加密货币市场感兴趣，或者想要了解更多关于 AI 和 DeFi 的应用，那么你应该关注这个平台。",
+    "keywords": [
+      "AI",
+      "DeFi",
+      "加密货币",
+      "利润优化",
+      "主网智能合约。"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "Agent"
+    ],
+    "quote_cn": "\"AI-powered DeFi yield optimization with mainnet smart contracts\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 4.4,
+      "personal_relevance": 5.8
+    },
+    "total_score": 5.8,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.8。新颖性较强（7.1）；个人相关性较强（5.8）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_github_1175494614_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_github_1175494614_response.txt",
+    "extra": {
+      "description": "INQAI Platform - AI-powered DeFi yield optimization with mainnet smart contracts",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

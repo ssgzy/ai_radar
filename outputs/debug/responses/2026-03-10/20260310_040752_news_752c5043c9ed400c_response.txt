@@ -1,0 +1,17 @@
+【内容概述】
+Anthropic 发布了 Code Review 工具，用于在 Claude Code 中自动分析 AI 生成的代码，标记逻辑错误，并帮助企业开发人员管理 AI 产生的代码量。
+
+【解决的问题】
+该工具试图解决企业开发人员面临的问题，即 AI 生成的代码量过多，难以管理和检查逻辑错误。
+
+【为什么值得关注】
+该工具的出现有助于提高 AI 生成的代码质量，减少开发人员的工作量，并提高企业的开发效率。
+
+【适合我关注的原因】
+作为个人 AI 情报系统使用者，了解 AI 技术的发展和应用，以及如何提高 AI 生成的代码质量，对于我个人和我所处的行业都有重要意义。
+
+【关键词】
+Anthropic, Claude Code, AI-generated code, logic errors, enterprise developers.
+
+【简洁引用】
+Anthropic 发布了 Code Review 工具，用于自动分析 AI 生成的代码。

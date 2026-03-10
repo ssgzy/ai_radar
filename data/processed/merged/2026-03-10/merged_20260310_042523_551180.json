@@ -1,0 +1,252 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容研究了多模式大语言模型（Multimodal Large Language Models，MLLM）在图像分类任务中的表现，并探讨了其评估协议和真实标签质量对其表现的关键影响。",
+    "problem_cn": "该研究试图解决多模式大语言模型在图像分类任务中表现不一致的问题，并探索了不同评估协议和真实标签质量对其表现的影响。",
+    "why_it_matters_cn": "该研究重要性在于揭示了多模式大语言模型在图像分类任务中的表现不一致是由于不良的评估协议和不准确的真实标签所导致的，并提供了一些改进方法来提高其表现。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，该研究对于了解多模式大语言模型在图像分类任务中的表现以及改进方法非常重要，可以帮助我更好地理解和应用这类模型。",
+    "keywords": [
+      "多模式大语言模型（Multimodal Large Language Models）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "表现"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "“多模式大语言模型在图像分类任务中的表现主要受评估协议和真实标签质量影响”。",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1175494614",
+    "title": "INQUISITIVE-AI/inquisitive-ai-agent",
+    "url": "https://github.com/INQUISITIVE-AI/inquisitive-ai-agent",
+    "published_at": "2026-03-09T20:25:40Z",
+    "authors": [
+      "INQUISITIVE-AI"
+    ],
+    "raw_content": "仓库名称：INQUISITIVE-AI/inquisitive-ai-agent\n仓库描述：INQAI Platform - AI-powered DeFi yield optimization with mainnet smart contracts\n主要语言：TypeScript\nStars：0",
+    "content_overview_cn": "这条信息是关于一个名为 INQAI Platform 的 AI 加密货币 DeFi 利润优化平台的介绍，该平台使用主网智能合约。",
+    "problem_cn": "该平台试图帮助用户优化 DeFi 利润，通过 AI 技术自动化交易和利润优化。",
+    "why_it_matters_cn": "该平台使用 AI 技术来自动化 DeFi 交易，可能会带来更高的利润和更好的交易效率。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果你对加密货币市场感兴趣，或者想要了解更多关于 AI 和 DeFi 的应用，那么你应该关注这个平台。",
+    "keywords": [
+      "AI",
+      "DeFi",
+      "加密货币",
+      "利润优化",
+      "主网智能合约。"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "Agent"
+    ],
+    "quote_cn": "\"AI-powered DeFi yield optimization with mainnet smart contracts\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 4.4,
+      "personal_relevance": 5.8
+    },
+    "total_score": 5.8,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.8。新颖性较强（7.1）；个人相关性较强（5.8）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_github_1175494614_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_github_1175494614_response.txt",
+    "extra": {
+      "description": "INQAI Platform - AI-powered DeFi yield optimization with mainnet smart contracts",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  },
+  {
+    "source": "rss",
+    "item_id": "ec92a6e121b60abc",
+    "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+    "published_at": "2026-03-09T18:36:33+00:00",
+    "authors": [],
+    "raw_content": "",
+    "content_overview_cn": "IBM 发布了 Granite 4.0 1B Speech 模型，它是一种紧凑、多语言、适合边缘计算的语音模型。",
+    "problem_cn": "Granite 4.0 1B Speech 模型试图解决语音识别技术在多语言环境中的应用问题，同时考虑了在边缘计算环境中的实际需求。",
+    "why_it_matters_cn": "该模型的发布意味着语音识别技术在多语言环境中的应用将更加方便，并且可以在边缘计算环境中实现，这将为各种行业带来新的机遇。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解新的语音识别技术可以帮助我更好地了解和分析各种语言的信息，同时，了解边缘计算环境中的应用可以帮助我更好地了解和分析实时数据。",
+    "keywords": [
+      "语音识别",
+      "多语言",
+      "边缘计算",
+      "IBM Granite 4.0 1B Speech"
+    ],
+    "tags": [
+      "RSS 订阅"
+    ],
+    "quote_cn": "\"Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge\" - 紧凑、多语言、适合边缘计算的新语音识别技术。",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 3.0,
+      "personal_relevance": 3.0
+    },
+    "total_score": 4.0,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.0。新颖性较强（5.8）；落地信号较强（3.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_rss_ec92a6e121b60abc_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_rss_ec92a6e121b60abc_response.txt",
+    "extra": {
+      "entry_id": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+      "feed_name": "Hugging Face Blog",
+      "feed_url": "https://huggingface.co/blog/feed.xml",
+      "source_feed_title": "Hugging Face - Blog"
+    }
+  },
+  {
+    "source": "hackernews",
+    "item_id": "47312728",
+    "title": "Show HN: The Mog Programming Language",
+    "url": "https://moglang.org",
+    "published_at": "2026-03-09T17:57:00+00:00",
+    "authors": [
+      "belisarius222"
+    ],
+    "raw_content": "标题：Show HN: The Mog Programming Language\n文本：Hi, Ted here, creator of Mog.<p>- Mog is a statically typed, compiled, embedded language (think statically typed Lua) designed to be written by LLMs -- the full spec fits in 3,200 tokens. - An AI agent writes a Mog program, compiles it, and dynamically loads it as a plugin, script, or hook. - The host controls exactly which functions a Mog program can call (capability-based permissions), so permissions propagate from agent to agent-written code. - Compiled to native code for low-latency plugin execution -- no interpreter overhead, no JIT, no process startup cost. - The compiler is written in safe Rust so the entire toolchain can be audited for security. Even without a full security audit, Mog is already useful for agents extending themselves with their own code. - MIT licensed, contributions welcome.<p>Motivations for Mog:<p>1. Syntax Only an AI Could Love: Mog is written for AIs to write, so the spec fits easily in context (~3200 tokens), and it&#x27;s intended to minimize foot-guns to lower the error rate when generating Mog code. This is why Mog has no operator precedence: non-associative operations have to use parentheses, e.g. (a + b) * c. It&#x27;s also why there&#x27;s no implicit type coercion, which I&#x27;ve found over the decades to be an annoying source of runtime bugs. There&#x27;s also less support in Mog for generics, and there&#x27;s absolutely no support for metaprogramming, macros, or syntactic abstraction.<p>When asking people to write code in a language, these restrictions could be onerous. But LLMs don&#x27;t care, and the less expressivity you trust them with, the better.<p>2. Capabilities-Based Permissionsl: There&#x27;s a paradox with existing security models for AI agents. If you give an agent like OpenClaw unfettered access to your data, that&#x27;s insecure and you&#x27;ll get pwned. But if you sandbox it, it can&#x27;t do most of what you want. Worse, if you run scripts the agent wrote, those scripts don&#x27;t inherit the permissions that constrain the agent&#x27;s own bash tool calls, which leads to pwnage and other chaos. And that&#x27;s not even assuming you run one of the many OpenClaw plugins with malware.<p>Mog tries to solve this by taking inspiration from embedded languages. It compiles all the way to machine code, ahead of time, but the compiler doesn&#x27;t output any dangerous code (at least it shouldn&#x27;t -- Mog is quite new, so that could still be buggy). This allows a host program, such as an AI agent, to generate Mog source code, compile it, and load it into itself using dlopen(), while maintaining security guarantees.<p>The main trick is that a Mog program on its own can&#x27;t do much. It has no direct access to syscalls, libc, or memory. It can basically call functions, do heap allocations (but only within the arena the host gives it), and return something. If the host wants the Mog program to be able to do I&#x2F;O, it has to supply the functions that the Mog program will call. A core invariant is that a Mog program should never be able to crash the host program, corrupt its state, or consume more resources than the host allows.<p>This allows the host to inspect the arguments to any potentially dangerous operation that the Mog program attempts, since it&#x27;s code that runs in the host. For example, a host agent could give a Mog program a function to run a bash command, then enforce its own session-level permissions on that command, even though the command was dynamically generated by a plugin that was written without prior knowledge of those permission settings.<p>(There are a couple other tricks that PL people might find interesting. One is that the host can limit the execution time of the guest program. It does this using cooperative interrupt polling, i.e. the compiler inserts runtime checks that check if the host has asked the guest to stop. This causes a roughly 10% drop in performance on extremely tight loops, which are the worst case. It could almost certainly be optimized.)<p>3. Self Modification Without Restart: When I try to modify my OpenClaw from my phone, I have to restart the whole agent. Mog fixes this: an agent can compile and run new plugins without interrupting a session, which makes it dynamically responsive to user feedback (e.g., you tell it to always ask you before deleting a file and without any interruption it compiles and loads the code to... actually do that).<p>Async support is built into the language, by adapting LLVM&#x27;s coroutine lowering to our Rust port of the QBE compiler, which is what Mog uses for compilation. The Mog host library can be slotted into an async event loop (tested with Bun), so Mog async calls get scheduled seamlessly by the agent&#x27;s event loop. Another trick is that the Mog program uses a stack inside the memory arena that the host provides for it to run in, rather than the system stack. The system tracks a guard page between the stack and heap. This design prevents stack overflow without runtime overhead.<p>Lots of work still needs to be done to make Mog a &quot;batteries-included&quot; experience like Python. Most of that work involves fleshing out a standard library to include things like JSON, CSV, Sqlite, and HTTP. One high-impact addition would be an `llm` library that allows the guest to make LLM calls through the agent, which should support multiple models and token budgeting, so the host could prevent the plugin from burning too many tokens.<p>I suspect we&#x27;ll also want to do more work to make the program lifecycle operations more ergonomic. And finally, there should be a more fully featured library for integrating a Mog host into an AI agent like OpenClaw or OpenAI&#x27;s Codex CLI.\n分数：61\n评论数：20",
+    "content_overview_cn": "这条信息介绍了一种名为 Mog 的编程语言，它是一个静态类型、编译的、嵌入式语言，旨在由 LLM 编写。",
+    "problem_cn": "Mog 试图解决 AI 代理的安全问题，以及在 AI 代理与用户之间实现更好的交互。它通过限制语言的表达能力、实现能力基础权限、以及支持自动编译和运行新插件等特性，来实现这一目标。",
+    "why_it_matters_cn": "Mog 值得关注，因为它可以帮助 AI 代理更好地控制权限、减少运行时错误、提高响应速度，并且可以与现有的 AI 代理集成。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注 Mog，因为它可以帮助我们更好地控制 AI 代理的行为、减少运行时错误、提高响应速度，并且可以与现有的 AI 代理集成。",
+    "keywords": [
+      "Mog 编程语言",
+      "AI 代理",
+      "安全",
+      "权限控制",
+      "响应速度",
+      "集成。"
+    ],
+    "tags": [
+      "Hacker News",
+      "Agent",
+      "大模型"
+    ],
+    "quote_cn": "\"Mog 是一个静态类型、编译的、嵌入式语言，旨在由 LLM 编写，用于更好地控制 AI 代理的行为、减少运行时错误、提高响应速度，并且可以与现有的 AI 代理集成。\"",
+    "score_breakdown": {
+      "novelty": 7.9,
+      "execution_signal": 4.4,
+      "personal_relevance": 7.6
+    },
+    "total_score": 6.7,
+    "priority_level": "重点关注",
+    "recommendation_cn": "建议加入观察清单，今天至少完成一次快速复盘。",
+    "score_reason_cn": "总分 6.7。新颖性较强（7.9）；个人相关性较强（7.6）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_hackernews_47312728_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_hackernews_47312728_response.txt",
+    "extra": {
+      "hn_score": 61,
+      "hn_comments": 20,
+      "hn_item_url": "https://news.ycombinator.com/item?id=47312728",
+      "hn_relevance_score": 5.0,
+      "hn_relevance_signals": {
+        "strong": [
+          "llm",
+          "openai"
+        ],
+        "weak": [
+          "agent",
+          "agents",
+          "ai",
+          "model"
+        ],
+        "excluded": []
+      }
+    }
+  },
+  {
+    "source": "news",
+    "item_id": "752c5043c9ed400c",
+    "title": "Anthropic launches code review tool to check flood of AI-generated code",
+    "url": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/",
+    "published_at": "2026-03-09T19:41:34+00:00",
+    "authors": [
+      "Rebecca Bellan"
+    ],
+    "raw_content": "Anthropic launched Code Review in Claude Code, a multi-agent system that automatically analyzes AI-generated code, flags logic errors, and helps enterprise developers manage the growing volume of code produced with AI.",
+    "content_overview_cn": "Anthropic 发布了 Code Review 工具，用于在 Claude Code 中自动分析 AI 生成的代码，标记逻辑错误，并帮助企业开发人员管理 AI 生成的代码量。",
+    "problem_cn": "该工具试图解决企业开发人员面临的问题，即 AI 生成的代码量过多，难以管理和检查逻辑错误。",
+    "why_it_matters_cn": "该工具的出现有助于提高 AI 生成的代码质量，减少开发人员的工作量，并提高企业的开发效率。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解这种工具可以帮助我了解 AI 技术的最新发展，并提高我自己的 AI 开发能力。",
+    "keywords": [
+      "Anthropic",
+      "Claude Code",
+      "AI-generated code",
+      "code review",
+      "logic errors",
+      "enterprise developers."
+    ],
+    "tags": [
+      "新闻站点",
+      "Agent",
+      "大模型",
+      "开发工具"
+    ],
+    "quote_cn": "\"Anthropic 发布了 Code Review 工具，用于自动分析 AI 生成的代码\"。",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 3.6,
+      "personal_relevance": 5.4
+    },
+    "total_score": 5.5,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.5。新颖性较强（7.1）；个人相关性较强（5.4）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_042523_551180_news_752c5043c9ed400c_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_042523_551180_news_752c5043c9ed400c_response.txt",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100624",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

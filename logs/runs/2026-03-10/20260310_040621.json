@@ -1,0 +1,46 @@
+{
+  "run_id": "20260310_040621",
+  "run_mode": "manual",
+  "started_at": "2026-03-10T04:06:21+08:00",
+  "completed_at": "2026-03-10T04:06:52+08:00",
+  "duration_seconds": 31.64,
+  "sources": [
+    {
+      "source": "rss",
+      "raw_count": 1,
+      "processed_count": 0,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/rss/rss_20260310_040621.json",
+      "processed_path": null,
+      "started_at": "2026-03-10T04:06:21+08:00",
+      "completed_at": "2026-03-10T04:06:52+08:00",
+      "duration_seconds": 31.63,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 0,
+        "tagged": 0,
+        "scored": 0,
+        "deduped": 0,
+        "exported": 0,
+        "failed": 1
+      },
+      "note_paths": [],
+      "errors": [],
+      "extra": {}
+    }
+  ],
+  "total_processed": 0,
+  "total_deduped": 0,
+  "failed_items_count": 1,
+  "duplicate_count": 0,
+  "merged_path": null,
+  "deduped_path": null,
+  "duplicate_report_path": null,
+  "scored_path": null,
+  "daily_brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/AI Radar 日报 - 2026-03-10 - 20260310_040621.md",
+  "brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/AI Radar 日报 - 2026-03-10 - 20260310_040621.md",
+  "weekly_brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/AI Radar 周报 - 2026-W11.md",
+  "weekly_report_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/reports/weekly/AI Radar 周报 - 2026-W11.md",
+  "failed_items_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/failed_items/failed_items_20260310_040621.json",
+  "runtime_context": {},
+  "top_items": []
+}

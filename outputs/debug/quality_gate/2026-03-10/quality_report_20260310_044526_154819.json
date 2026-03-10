@@ -1,0 +1,104 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 8.9,
+    "adjusted_score": 8.9,
+    "focus_tag_hits": [],
+    "strong_keyword_hits": [],
+    "medium_keyword_hits": [],
+    "blocked_hits": [],
+    "reason_cn": "核心来源默认保留。"
+  },
+  {
+    "source": "github",
+    "item_id": "1177238287",
+    "title": "MansiMore99/patronet-llm-grpo-env",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 5.4,
+    "adjusted_score": 5.4,
+    "focus_tag_hits": [],
+    "strong_keyword_hits": [],
+    "medium_keyword_hits": [],
+    "blocked_hits": [],
+    "reason_cn": "核心来源默认保留。"
+  },
+  {
+    "source": "rss",
+    "item_id": "ec92a6e121b60abc",
+    "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 4.0,
+    "adjusted_score": 5.2,
+    "focus_tag_hits": [
+      "语音与音频"
+    ],
+    "strong_keyword_hits": [
+      "speech"
+    ],
+    "medium_keyword_hits": [],
+    "blocked_hits": [],
+    "reason_cn": "调节后分数 5.2 达到阈值 4.2；命中主题标签：语音与音频；命中强信号：speech"
+  },
+  {
+    "source": "hackernews",
+    "item_id": "47312728",
+    "title": "Show HN: The Mog Programming Language",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 6.7,
+    "adjusted_score": 10.5,
+    "focus_tag_hits": [
+      "Agent",
+      "大模型",
+      "开发工具"
+    ],
+    "strong_keyword_hits": [
+      "agent",
+      "llm",
+      "codex"
+    ],
+    "medium_keyword_hits": [
+      "code"
+    ],
+    "blocked_hits": [],
+    "reason_cn": "调节后分数 10.5 达到阈值 5.6；命中主题标签：Agent, 大模型, 开发工具；命中强信号：agent, llm, codex"
+  },
+  {
+    "source": "news",
+    "item_id": "3c1e0c659fa940d1",
+    "title": "Anthropic Introduces Code Review via Claude Code to Automate Complex Security Research Using Advanced Agentic Multi-Step Reasoning Loops",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 9.0,
+    "adjusted_score": 13.2,
+    "focus_tag_hits": [
+      "Agent",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "开发工具",
+      "自动化"
+    ],
+    "strong_keyword_hits": [
+      "agent",
+      "benchmark",
+      "code review",
+      "mcp"
+    ],
+    "medium_keyword_hits": [
+      "developer",
+      "workflow",
+      "terminal",
+      "code",
+      "reasoning"
+    ],
+    "blocked_hits": [],
+    "reason_cn": "调节后分数 13.2 达到阈值 5.0；命中主题标签：Agent, 大模型, 多模态；命中强信号：agent, benchmark, code review"
+  }
+]

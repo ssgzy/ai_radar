@@ -1,0 +1,53 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容讨论了多模态大语言模型（Multimodal Large Language Models，MLLM）作为图像分类器的性能，以及其评估协议和真实标签质量对其影响的关键问题。",
+    "problem_cn": "该研究试图解决多模态大语言模型与监督和视觉语言模型之间的比较结果存在矛盾的问题，并指出这些矛盛主要来自于不适当的评估协议导致的性能过高或低估。",
+    "why_it_matters_cn": "该研究重要之处在于它揭示了多模态大语言模型在图像分类中的性能可能是由于不良的真实标签和不适当的评估协议导致的误导性结果，而不是模型本身的缺陷。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该研究，因为它可能帮助我了解多模态大语言模型在图像分类中的真实性能，并提供有关如何改善模型性能和数据质量的建议。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "数据质量"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类中的性能可能是由于不良的真实标签和不适当的评估协议导致的误导性结果\"。",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV"
+    }
+  }
+]

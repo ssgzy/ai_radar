@@ -7,6 +7,7 @@ from pathlib import Path
 
 from src.models import ProcessedItem, RawItem
 from src.utils.file_ops import write_json
+from src.utils.time_utils import date_slug
 
 
 class JsonExporter:
@@ -17,43 +18,86 @@ class JsonExporter:
         self.processed_root = processed_root
         self.logger = logging.getLogger("exporter")
 
-    def export_raw(self, source: str, items: list[RawItem], run_id: str) -> Path:
+    def export_raw(
+        self,
+        source: str,
+        items: list[RawItem],
+        run_id: str,
+        archive_date: str | None = None,
+    ) -> Path:
         """导出某个来源的原始数据。"""
 
+        day = archive_date or date_slug()
         path = write_json(
-            self.raw_root / source / f"{source}_{run_id}.json",
+            self.raw_root / source / day / f"{source}_{run_id}.json",
             [item.to_dict() for item in items],
         )
         self.logger.info("导出 raw JSON | source=%s | path=%s", source, path)
         return path
 
-    def export_processed(self, source: str, items: list[ProcessedItem], run_id: str) -> Path:
+    def export_processed(
+        self,
+        source: str,
+        items: list[ProcessedItem],
+        run_id: str,
+        archive_date: str | None = None,
+    ) -> Path:
         """导出某个来源的处理后数据。"""
 
+        day = archive_date or date_slug()
         path = write_json(
-            self.processed_root / source / f"{source}_{run_id}.json",
+            self.processed_root / source / day / f"{source}_{run_id}.json",
             [item.to_dict() for item in items],
         )
         self.logger.info("导出 processed JSON | source=%s | path=%s", source, path)
         return path
 
-    def export_merged(self, items: list[ProcessedItem], run_id: str) -> Path:
+    def export_merged(self, items: list[ProcessedItem], run_id: str, archive_date: str | None = None) -> Path:
         """导出本次运行的合并结果。"""
 
+        day = archive_date or date_slug()
         path = write_json(
-            self.processed_root / "merged" / f"merged_{run_id}.json",
+            self.processed_root / "merged" / day / f"merged_{run_id}.json",
             [item.to_dict() for item in items],
         )
         self.logger.info("导出 merged JSON | path=%s", path)
         return path
 
-    def export_scored(self, items: list[ProcessedItem], run_id: str) -> Path:
+    def export_scored(self, items: list[ProcessedItem], run_id: str, archive_date: str | None = None) -> Path:
         """导出按分数排序的结果。"""
 
         sorted_items = sorted(items, key=lambda item: item.total_score, reverse=True)
+        day = archive_date or date_slug()
         path = write_json(
-            self.processed_root / "scored" / f"scored_{run_id}.json",
+            self.processed_root / "scored" / day / f"scored_{run_id}.json",
             [item.to_dict() for item in sorted_items],
         )
         self.logger.info("导出 scored JSON | path=%s", path)
+        return path
+
+    def export_deduped(self, items: list[ProcessedItem], run_id: str, archive_date: str | None = None) -> Path:
+        """导出去重后的唯一结果。"""
+
+        day = archive_date or date_slug()
+        path = write_json(
+            self.processed_root / "deduped" / day / f"deduped_{run_id}.json",
+            [item.to_dict() for item in items],
+        )
+        self.logger.info("导出 deduped JSON | path=%s", path)
+        return path
+
+    def export_duplicate_report(
+        self,
+        duplicates: list[dict],
+        run_id: str,
+        archive_date: str | None = None,
+    ) -> Path:
+        """导出去重命中报告。"""
+
+        day = archive_date or date_slug()
+        path = write_json(
+            self.processed_root / "deduped" / day / f"duplicates_{run_id}.json",
+            duplicates,
+        )
+        self.logger.info("导出 duplicate report | path=%s", path)
         return path

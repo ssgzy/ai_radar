@@ -1,0 +1,20 @@
+[
+  {
+    "source": "github",
+    "item_id": "1177238287",
+    "title": "MansiMore99/patronet-llm-grpo-env",
+    "url": "https://github.com/MansiMore99/patronet-llm-grpo-env",
+    "published_at": "2026-03-09T20:45:34Z",
+    "authors": [
+      "MansiMore99"
+    ],
+    "content": "仓库名称：MansiMore99/patronet-llm-grpo-env\n仓库描述：LLM-centric emergency triage RL env implementing an OpenEnv-compatible HTTP interface, GRPO rollouts, and dense/sparse verifier rewards over full trajectories.\n主要语言：未知\nStars：0",
+    "extra": {
+      "description": "LLM-centric emergency triage RL env implementing an OpenEnv-compatible HTTP interface, GRPO rollouts, and dense/sparse verifier rewards over full trajectories.",
+      "language": "未知",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

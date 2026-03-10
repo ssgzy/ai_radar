@@ -14,10 +14,17 @@ def now_local_iso() -> str:
 def timestamp_slug() -> str:
     """返回适合文件名使用的时间戳。"""
 
-    return datetime.now().strftime("%Y%m%d_%H%M%S")
+    return datetime.now().strftime("%Y%m%d_%H%M%S_%f")
 
 
 def date_slug() -> str:
     """返回日期字符串。"""
 
     return datetime.now().strftime("%Y-%m-%d")
+
+
+def week_slug() -> str:
+    """返回 ISO 周字符串。"""
+
+    iso_year, iso_week, _ = datetime.now().isocalendar()
+    return f"{iso_year}-W{iso_week:02d}"

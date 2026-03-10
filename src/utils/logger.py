@@ -31,7 +31,19 @@ def setup_logging(log_dir: Path) -> dict[str, logging.Logger]:
         force=True,
     )
 
-    logger_names = ["app", "collector", "summarizer", "scorer", "tagger", "exporter", "scheduler", "errors"]
+    logger_names = [
+        "app",
+        "collector",
+        "summarizer",
+        "scorer",
+        "tagger",
+        "quality_gate",
+        "topic",
+        "deduper",
+        "exporter",
+        "scheduler",
+        "errors",
+    ]
     loggers: dict[str, logging.Logger] = {}
 
     for logger_name in logger_names:

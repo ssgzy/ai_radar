@@ -1,0 +1,245 @@
+[
+  {
+    "source": "arxiv",
+    "item_id": "2603.06578v1",
+    "title": "Multimodal Large Language Models as Image Classifiers",
+    "url": "http://arxiv.org/abs/2603.06578v1",
+    "published_at": "2026-03-06T18:59:58+00:00",
+    "authors": [
+      "Nikita Kisel",
+      "Illia Volkov",
+      "Klara Janouskova",
+      "Jiri Matas"
+    ],
+    "raw_content": "Multimodal Large Language Models (MLLM) classification performance depends critically on evaluation protocol and ground truth quality. Studies comparing MLLMs with supervised and vision-language models report conflicting conclusions, and we show these conflicts stem from protocols that either inflate or underestimate performance. Across the most common evaluation protocols, we identify and fix key issues: model outputs that fall outside the provided class list and are discarded, inflated results from weak multiple-choice distractors, and an open-world setting that underperforms only due to poor output mapping. We additionally quantify the impact of commonly overlooked design choices - batch size, image ordering, and text encoder selection - showing they substantially affect accuracy. Evaluating on ReGT, our multilabel reannotation of 625 ImageNet-1k classes, reveals that MLLMs benefit most from corrected labels (up to +10.8%), substantially narrowing the perceived gap with supervised models. Much of the reported MLLMs underperformance on classification is thus an artifact of noisy ground truth and flawed evaluation protocol rather than genuine model deficiency. Models less reliant on supervised training signals prove most sensitive to annotation quality. Finally, we show that MLLMs can assist human annotators: in a controlled case study, annotators confirmed or integrated MLLMs predictions in approximately 50% of difficult cases, demonstrating their potential for large-scale dataset curation.",
+    "content_overview_cn": "这条内容讨论了多模态大语言模型（Multimodal Large Language Models，MLLM）作为图像分类器的性能，以及其评估协议和真实标签质量对其影响的关键问题。",
+    "problem_cn": "该研究试图解决多模态大语言模型与监督和视觉语言模型之间的比较结果存在矛盾的问题，并指出这些矛盛主要来自于不适当的评估协议导致的性能过高或低估。",
+    "why_it_matters_cn": "该研究重要之处在于它揭示了多模态大语言模型在图像分类中的性能可能是由于不良的真实标签和不适当的评估协议导致的误导性结果，而不是模型本身的缺陷。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注该研究，因为它可能帮助我了解多模态大语言模型在图像分类中的真实性能，并提供有关如何改善模型性能和数据质量的建议。",
+    "keywords": [
+      "多模态大语言模型（MLLM）",
+      "图像分类",
+      "评估协议",
+      "真实标签",
+      "数据质量"
+    ],
+    "tags": [
+      "论文",
+      "大模型",
+      "多模态",
+      "评测与基准",
+      "研究跟踪"
+    ],
+    "quote_cn": "\"多模态大语言模型在图像分类中的性能可能是由于不良的真实标签和不适当的评估协议导致的误导性结果\"。",
+    "score_breakdown": {
+      "novelty": 10.0,
+      "execution_signal": 8.0,
+      "personal_relevance": 8.7
+    },
+    "total_score": 8.9,
+    "priority_level": "高优先级跟进",
+    "recommendation_cn": "建议放入今日重点，优先精读论文或试用项目。",
+    "score_reason_cn": "总分 8.9。新颖性较强（10.0）；个人相关性较强（8.7）；适合持续做研究跟踪。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_arxiv_2603.06578v1_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_arxiv_2603.06578v1_response.txt",
+    "extra": {
+      "pdf_url": "https://arxiv.org/pdf/2603.06578v1",
+      "comment": "",
+      "primary_category": "cs.CV",
+      "duplicate_sources": []
+    }
+  },
+  {
+    "source": "hackernews",
+    "item_id": "47311657",
+    "title": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+    "url": "https://news.ycombinator.com/item?id=47311657",
+    "published_at": "2026-03-09T16:53:52+00:00",
+    "authors": [
+      "filipbalucha"
+    ],
+    "raw_content": "标题：Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents\n文本：Hello Hacker News! We&#x27;re Filip, Stavros, and Vivek from Terminal Use (<a href=\"https:&#x2F;&#x2F;www.terminaluse.com&#x2F;\">https:&#x2F;&#x2F;www.terminaluse.com&#x2F;</a>). We built Terminal Use to make it easier to deploy agents that work in a sandboxed environment and need filesystems to do work. This includes coding agents, research agents, document processing agents, and internal tools that read and write files.<p>Here&#x27;s a demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ttMl96l9xPA\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ttMl96l9xPA</a>.<p>Our biggest pain point with hosting agents was that you&#x27;d need to stitch together multiple pieces: packaging your agent, running it in a sandbox, streaming messages back to users, persisting state across turns, and managing getting files to and from the agent workspace.<p>We wanted something like Cog from Replicate, but for agents: a simple way to package agent code from a repo and serve it behind a clean API&#x2F;SDK. We wanted to provide a protocol to communicate with your agent, but not constraint the agent logic or harness itself.<p>On Terminal Use, you package your agent from a repo with a config.yaml and Dockerfile, then deploy it with our CLI. You define the logic of three endpoints (on_create, on_event, and on_cancel) which track the lifecycle of a task (conversation). The config.yaml contains details about resources, build context, etc.<p>Out of the box, we support Claude Agent SDK and Codex SDK agents. By support, we mean that we have an adapter that converts from the SDK message types to ours. If you&#x27;d like to use your own custom harness, you can convert and send messages with our types (Vercel AI SDK v6 compatible). For the frontend, we have a Vercel AI SDK provider that lets you use your agent with Vercel&#x27;s AI SDK, and have a messages module so that you don&#x27;t have to manage streaming and persistence yourself.<p>The part we think is most different is storage.<p>We treat filesystems as first-class primitives, separate from the lifecycle of a task. That means you can persist a workspace across turns, share it between different agents, or upload &#x2F; download files independent of the sandbox being active. Further, our filesystem SDK provides presigned urls which makes it easy for your users to directly upload and download files which means that you don&#x27;t need to proxy file transfer through your backend.<p>Since your agent logic and filesystem storage are decoupled, this makes it easy to iterate on your agents without worrying about the files in the sandbox: if you ship a bug, you can deploy and auto-migrate all your tasks to the new deployment. If you make a breaking change, you can specify that existing tasks stay on the existing version, and only new tasks use the new version.<p>We&#x27;re also adding support for multi-filesystem mounts with configurable mount paths and read&#x2F;write modes, so storage stays durable and reusable while mount layout stays task-specific.<p>On the deployment side, we&#x27;ve been influenced by modern developer platforms: simple CLI deployments, preview&#x2F;production environments, git-based environment targeting, logs, and rollback. All the configuration you need to build, deploy &amp; manage resources for your agent is stored in the config.yaml file which makes it easy to build &amp; deploy your agent in CI&#x2F;CD pipelines.<p>Finally, we&#x27;ve explicitly designed our platform for your CLI coding agents to help you build, test, &amp; iterate with your agents. With our CLI, your coding agents can send messages to your deployed agents, and download filesystem contents to help you understand your agent&#x27;s output. A common way we test our agents is that we make markdown files with user scenarios we&#x27;d like to test, and then ask Claude Code to impersonate our users and chat with our deployed agent.<p>What we do not have yet: full parity with general-purpose sandbox providers. For example, preview URLs and lower-level sandbox.exec(...) style APIs are still on the roadmap.<p>We&#x27;re excited to hear any thoughts, insights, questions, and concerns in the comments below!\n分数：40\n评论数：20",
+    "content_overview_cn": "Terminal Use 是一个新项目，旨在简化在沙箱环境中运行需要文件系统的代理（agent）的部署。这包括编码代理、研究代理、文档处理代理和读写文件的内部工具。",
+    "problem_cn": "Terminal Use 解决了在部署代理时需要组合多个部分的问题，包括代理打包、在沙箱中运行代理、向用户发送消息、持久化状态以及文件与代理工作区之间的管理。",
+    "why_it_matters_cn": "Terminal Use 提供了一个简单的方法来从存储库中打包代理代码，并通过 API/SDK 服务它。它还提供了一个文件系统 SDK，使用户可以直接上传和下载文件，而无需通过后端代理文件传输。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，Terminal Use 可以帮助我更容易地部署和管理在沙箱环境中运行的代理，并提供了一个方便的文件系统 SDK 来管理文件。",
+    "keywords": [
+      "Terminal Use",
+      "代理",
+      "文件系统",
+      "沙箱",
+      "API",
+      "SDK",
+      "部署",
+      "管理"
+    ],
+    "tags": [
+      "Hacker News",
+      "Agent",
+      "大模型",
+      "开发工具",
+      "自动化"
+    ],
+    "quote_cn": "“We built Terminal Use to make it easier to deploy agents that work in a sandboxed environment and need filesystems to do work.”",
+    "score_breakdown": {
+      "novelty": 8.7,
+      "execution_signal": 5.6,
+      "personal_relevance": 9.1
+    },
+    "total_score": 7.9,
+    "priority_level": "重点关注",
+    "recommendation_cn": "建议加入观察清单，今天至少完成一次快速复盘。",
+    "score_reason_cn": "总分 7.9。个人相关性较强（9.1）；新颖性较强（8.7）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_hackernews_47311657_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_hackernews_47311657_response.txt",
+    "extra": {
+      "hn_score": 40,
+      "hn_comments": 20,
+      "hn_item_url": "https://news.ycombinator.com/item?id=47311657",
+      "duplicate_sources": []
+    }
+  },
+  {
+    "source": "github",
+    "item_id": "1155606582",
+    "title": "VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026",
+    "url": "https://github.com/VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026",
+    "published_at": "2026-03-09T19:23:38Z",
+    "authors": [
+      "VedikaPunjabi"
+    ],
+    "raw_content": "仓库名称：VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026\n仓库描述：Central repository for my “Agentic AI\" internship tasks at Innomatics Research Labs (2026).\n主要语言：Jupyter Notebook\nStars：0",
+    "content_overview_cn": "这条信息是关于一位名为 Vedika Punjabi 的学生在 Innomatics Research Labs 的高级生成式人工智能实习任务的中央仓库。",
+    "problem_cn": "这个仓库试图解决如何使用 Jupyter Notebook 实现高级生成式人工智能的问题，以完成该实习任务。",
+    "why_it_matters_cn": "这个仓库值得关注，因为它可能包含有关高级生成式人工智能的有用信息和实现方法，对于个人或企业的 AI 研究和开发具有重要意义。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注这个仓库，因为它可能提供有关高级生成式人工智能的实用信息和实现方法，可以帮助我们更好地了解和应用这种技术。",
+    "keywords": [
+      "高级生成式人工智能",
+      "Jupyter Notebook",
+      "Innomatics Research Labs",
+      "实习任务"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "Agent",
+      "开发工具"
+    ],
+    "quote_cn": "\"Central repository for my“Agentic AI\" internship tasks at Innomatics Research Labs\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 5.0,
+      "personal_relevance": 6.9
+    },
+    "total_score": 6.4,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 6.4。新颖性较强（7.1）；个人相关性较强（6.9）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_github_1155606582_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_github_1155606582_response.txt",
+    "extra": {
+      "description": "Central repository for my “Agentic AI\" internship tasks at Innomatics Research Labs (2026).",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "duplicate_sources": []
+    }
+  },
+  {
+    "source": "news",
+    "item_id": "b3c5d68296a1d223",
+    "title": "OpenAI acquires Promptfoo to secure its AI agents",
+    "url": "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/",
+    "published_at": "2026-03-09T17:49:04+00:00",
+    "authors": [
+      "Tim Fernholz"
+    ],
+    "raw_content": "This deal underscores how frontier labs are scrambling to prove their technology can be used safely in critical business operations.",
+    "content_overview_cn": "OpenAI 收购 Promptfoo，这表明边缘实验室正在努力证明其技术可以在关键业务操作中安全使用。",
+    "problem_cn": "这项行动试图解决如何使 AI 技术在关键业务操作中安全使用的问题，并且通过收购 Promptfoo 来加强自己的 AI 代理。",
+    "why_it_matters_cn": "这项新闻值得关注，因为它反映了 AI 技术在关键业务操作中的发展趋势，同时也是 OpenAI 在增强其 AI 代理能力方面的一步进一步。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注这项新闻，因为它可能会影响 AI 技术在关键业务操作中的应用，并且也可能会影响我使用的 AI 情报系统的性能和安全性。",
+    "keywords": [
+      "OpenAI",
+      "Promptfoo",
+      "AI 代理",
+      "关键业务操作",
+      "安全性。"
+    ],
+    "tags": [
+      "新闻站点",
+      "Agent"
+    ],
+    "quote_cn": "\"frontier labs are scrambling to prove their technology can be used safely in critical business operations.\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 3.0,
+      "personal_relevance": 6.0
+    },
+    "total_score": 5.5,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.5。新颖性较强（7.1）；个人相关性较强（6.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_news_b3c5d68296a1d223_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_news_b3c5d68296a1d223_response.txt",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100531",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch",
+      "duplicate_sources": []
+    }
+  },
+  {
+    "source": "rss",
+    "item_id": "ec92a6e121b60abc",
+    "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+    "published_at": "2026-03-09T18:36:33+00:00",
+    "authors": [],
+    "raw_content": "",
+    "content_overview_cn": "IBM 发布了其新版语音识别技术 Granite 4.0，它是一种紧凑、多语言、适合边缘计算的语音识别模型。",
+    "problem_cn": "Granite 4.0 试图解决语音识别技术在边缘计算环境中的应用问题，同时支持多种语言，以提高语音识别的准确性和可扩展性。",
+    "why_it_matters_cn": "Granite 4.0 的发布意味着语音识别技术在边缘计算领域有了一大进步，可以为各种 IoT 设备和移动应用带来更好的用户体验。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，Granite 4.0 的发布可能会带来更好的语音识别技术，可以为我们的 AI 系统带来更好的功能和性能。",
+    "keywords": [
+      "语音识别",
+      "Granite 4.0",
+      "边缘计算",
+      "多语言",
+      "IoT"
+    ],
+    "tags": [
+      "RSS 订阅"
+    ],
+    "quote_cn": "\"Granite 4.0 是一种紧凑、多语言、适合边缘计算的语音识别模型。\"",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 3.0,
+      "personal_relevance": 3.0
+    },
+    "total_score": 4.0,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.0。新颖性较强（5.8）；落地信号较强（3.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_rss_ec92a6e121b60abc_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_rss_ec92a6e121b60abc_response.txt",
+    "extra": {
+      "entry_id": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+      "feed_name": "Hugging Face Blog",
+      "feed_url": "https://huggingface.co/blog/feed.xml",
+      "source_feed_title": "Hugging Face - Blog",
+      "duplicate_sources": []
+    }
+  }
+]

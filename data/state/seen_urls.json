@@ -4,5 +4,21 @@
   "https://github.com/OpenLoaf/OpenLoaf": "github",
   "http://arxiv.org/abs/2603.06577v1": "arxiv",
   "https://github.com/RandomJword/f5": "github",
-  "https://github.com/ed-donner/llm_engineering": "github"
+  "https://github.com/ed-donner/llm_engineering": "github",
+  "https://github.com/gabemontero-appstudio-test-org/template-agentic-sample-gitops": "github",
+  "https://huggingface.co/blog/ibm-granite/granite-4-speech": "rss",
+  "https://fixfest.therestartproject.org/": "hackernews",
+  "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/": "news",
+  "https://github.com/VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026": "github",
+  "https://news.ycombinator.com/item?id=47311657": "hackernews",
+  "https://github.com/Aiddrag83/Aiden-Piercey---COMP1054WINTER2026": "github",
+  "https://blog.bryanl.dev/posts/ai-senior-engineer-pipeline/": "hackernews",
+  "https://github.com/feiniaovpn/Node-Airport-VPN": "github",
+  "https://moglang.org": "hackernews",
+  "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/": "news",
+  "https://github.com/dreadnode/rigging": "github",
+  "https://github.com/INQUISITIVE-AI/inquisitive-ai-agent": "github",
+  "https://github.com/MansiMore99/patronet-llm-grpo-env": "github",
+  "https://www.marktechpost.com/2026/03/09/anthropic-introduces-code-review-via-claude-code-to-automate-complex-security-research-using-advanced-agentic-multi-step-reasoning-loops/": "news",
+  "https://www.marktechpost.com/2026/03/09/andrew-ngs-team-releases-context-hub-an-open-source-tool-that-gives-your-coding-agent-the-up-to-date-api-documentation-it-needs/": "news"
 }

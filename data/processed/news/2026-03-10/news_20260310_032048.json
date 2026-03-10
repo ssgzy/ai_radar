@@ -1,0 +1,48 @@
+[
+  {
+    "source": "news",
+    "item_id": "b3c5d68296a1d223",
+    "title": "OpenAI acquires Promptfoo to secure its AI agents",
+    "url": "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/",
+    "published_at": "2026-03-09T17:49:04+00:00",
+    "authors": [
+      "Tim Fernholz"
+    ],
+    "raw_content": "This deal underscores how frontier labs are scrambling to prove their technology can be used safely in critical business operations.",
+    "content_overview_cn": "OpenAI 收购 Promptfoo，这意味着 OpenAI 在保护其 AI 代理方面取得了进展。",
+    "problem_cn": "这项收购试图解决如何证明前沿实验室的技术可以在关键商业运营中安全使用的问题。",
+    "why_it_matters_cn": "这项收购表明 AI 技术正在进入更广泛的商业应用，同时也为 OpenAI 的 AI 代理带来了更好的安全保护。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，这项收购有助于了解 AI 技术在商业应用中的发展趋势，同时也为我提供了更安全的 AI 代理选择。",
+    "keywords": [
+      "OpenAI",
+      "Promptfoo",
+      "AI 代理",
+      "商业应用",
+      "安全保护。"
+    ],
+    "tags": [
+      "新闻站点",
+      "Agent"
+    ],
+    "quote_cn": "\"Frontier labs are scrambling to prove their technology can be used safely in critical business operations.\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 3.0,
+      "personal_relevance": 6.0
+    },
+    "total_score": 5.5,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.5。新颖性较强（7.1）；个人相关性较强（6.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032048_news_b3c5d68296a1d223_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032048_news_b3c5d68296a1d223_response.txt",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100531",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

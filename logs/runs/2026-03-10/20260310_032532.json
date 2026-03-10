@@ -1,0 +1,169 @@
+{
+  "run_id": "20260310_032532",
+  "run_mode": "once",
+  "started_at": "2026-03-10T03:25:32+08:00",
+  "completed_at": "2026-03-10T03:26:39+08:00",
+  "duration_seconds": 67.01,
+  "sources": [
+    {
+      "source": "arxiv",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/arxiv/arxiv_20260310_032532.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/arxiv/arxiv_20260310_032532.json",
+      "started_at": "2026-03-10T03:25:32+08:00",
+      "completed_at": "2026-03-10T03:25:53+08:00",
+      "duration_seconds": 20.48,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "github",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/github/github_20260310_032532.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/github/github_20260310_032532.json",
+      "started_at": "2026-03-10T03:25:53+08:00",
+      "completed_at": "2026-03-10T03:26:04+08:00",
+      "duration_seconds": 11.16,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - Aiddrag83 Aiden-Piercey---COMP1054WINTER2026.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "rss",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/rss/rss_20260310_032532.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/rss/rss_20260310_032532.json",
+      "started_at": "2026-03-10T03:26:04+08:00",
+      "completed_at": "2026-03-10T03:26:16+08:00",
+      "duration_seconds": 11.84,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Granite 4.0 1B Speech Compact, Multilingual, and Built for the Edge.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "hackernews",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/hackernews/hackernews_20260310_032532.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/hackernews/hackernews_20260310_032532.json",
+      "started_at": "2026-03-10T03:26:16+08:00",
+      "completed_at": "2026-03-10T03:26:28+08:00",
+      "duration_seconds": 12.37,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "news",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/news/news_20260310_032532.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/news/news_20260310_032532.json",
+      "started_at": "2026-03-10T03:26:28+08:00",
+      "completed_at": "2026-03-10T03:26:39+08:00",
+      "duration_seconds": 11.15,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - OpenAI acquires Promptfoo to secure its AI agents.md"
+      ],
+      "errors": [],
+      "extra": {}
+    }
+  ],
+  "total_processed": 5,
+  "total_deduped": 5,
+  "duplicate_count": 0,
+  "merged_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/merged/merged_20260310_032532.json",
+  "deduped_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/deduped/deduped_20260310_032532.json",
+  "duplicate_report_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/deduped/duplicates_20260310_032532.json",
+  "scored_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/scored/scored_20260310_032532.json",
+  "daily_brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/AI Radar 日报 - 2026-03-10 - 20260310_032532.md",
+  "top_items": [
+    {
+      "title": "Multimodal Large Language Models as Image Classifiers",
+      "source": "arxiv",
+      "total_score": 8.9,
+      "priority_level": "高优先级跟进",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md"
+    },
+    {
+      "title": "OpenAI acquires Promptfoo to secure its AI agents",
+      "source": "news",
+      "total_score": 5.5,
+      "priority_level": "快速浏览",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - OpenAI acquires Promptfoo to secure its AI agents.md"
+    },
+    {
+      "title": "Aiddrag83/Aiden-Piercey---COMP1054WINTER2026",
+      "source": "github",
+      "total_score": 4.7,
+      "priority_level": "低优先级",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - Aiddrag83 Aiden-Piercey---COMP1054WINTER2026.md"
+    },
+    {
+      "title": "AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed",
+      "source": "hackernews",
+      "total_score": 4.4,
+      "priority_level": "低优先级",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed.md"
+    },
+    {
+      "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+      "source": "rss",
+      "total_score": 4.0,
+      "priority_level": "低优先级",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Granite 4.0 1B Speech Compact, Multilingual, and Built for the Edge.md"
+    }
+  ]
+}

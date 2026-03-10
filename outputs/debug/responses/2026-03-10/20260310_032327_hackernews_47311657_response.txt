@@ -1,0 +1,17 @@
+【内容概述】
+Terminal Use 是一个新项目，旨在简化在沙箱环境中运行需要文件系统的代理（agent）的部署。这包括编码代理、研究代理、文档处理代理和读写文件的内部工具。
+
+【解决的问题】
+Terminal Use 解决了在部署代理时需要组合多个部分的问题，包括代理打包、在沙箱中运行代理、向用户发送消息、持久化状态以及文件与代理工作区之间的管理。
+
+【为什么值得关注】
+Terminal Use 提供了一个简单的方法来从存储库中打包代理代码，并通过 API/SDK 服务它。它还提供了一个文件系统 SDK，使用户可以直接上传和下载文件，而无需通过后端代理文件传输。
+
+【适合我关注的原因】
+作为个人 AI 情报系统使用者，Terminal Use 可以帮助我更容易地部署和管理在沙箱环境中运行的代理，并提供了一个方便的文件系统 SDK 来管理文件。
+
+【关键词】
+Terminal Use、代理、文件系统、沙箱、API、SDK、部署、管理
+
+【简洁引用】
+“We built Terminal Use to make it easier to deploy agents that work in a sandboxed environment and need filesystems to do work.”

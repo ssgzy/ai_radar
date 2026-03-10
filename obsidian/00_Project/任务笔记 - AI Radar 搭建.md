@@ -4,7 +4,7 @@
 
 ## 任务目标
 
-从真实目录出发，构建一个可持续迭代、可追踪、可落地到 Obsidian 的 AI Radar 系统。当前重点已经从 V1 转到 V2：在原有闭环上加入评分、标签、排序和更强的运行记录。
+从真实目录出发，构建一个可持续迭代、可追踪、可落地到 Obsidian 的 AI Radar 系统。当前重点已经推进到 V3：在原有 `arXiv + GitHub + Ollama + scoring/tags` 闭环上，继续接入更多来源并加入正式的 merge / dedupe。
 
 ## 本轮约束
 
@@ -31,7 +31,7 @@
 
 ## 当前任务边界
 
-本轮只承诺做 V1，不一次性铺满全部来源和全部 Agent；但结构会为 V2-V5 预留清晰接口。
+当前阶段已经完成 V1-V3 的连续迭代；后续不再回到“大一统脚本”做法，而是继续按版本推进。
 
 ## 本轮已完成
 
@@ -173,3 +173,166 @@ python run_once.py --max-items 2
 4. 在 `config/sources.yaml` 中加入真实默认源
 5. 实现 merge / dedupe，产出 deduped JSON
 6. 用真实多源数据跑一次 V3，并写入 [[版本迭代记录]]
+
+## V3 本轮已完成
+
+- 已新增 `BaseFeedCollector`
+- 已新增 `RSSCollector`
+- 已新增 `HackerNewsCollector`
+- 已新增 `NewsCollector`
+- 已新增 `HeuristicDeduper`
+- 已让 `pipeline` 在合并后执行 `dedupe`
+- 已新增 `deduped JSON` 与 `duplicate report`
+- 已让 `ObsidianExporter` 为 `rss / hackernews / news` 输出 `inbox` 笔记
+- 已让日报展示去重前后数量、重复移除数和每个来源的去重后条目数
+- 已修正 `Hacker News` 短关键词的误判问题
+- 已修正 `deduped/scored JSON` 的 `note_path` 回写时序问题
+
+## V3 实际运行命令
+
+```bash
+python -m pytest -q
+python run_once.py --max-items 1
+python run_once.py --max-items 1
+python run_once.py --max-items 1
+```
+
+## V3 实际产出
+
+- 运行 ID：`20260310_032532`
+- 合并结果：`data/processed/merged/merged_20260310_032532.json`
+- 去重结果：`data/processed/deduped/deduped_20260310_032532.json`
+- 重复报告：`data/processed/deduped/duplicates_20260310_032532.json`
+- 评分结果：`data/processed/scored/scored_20260310_032532.json`
+- 日报：`outputs/obsidian/dashboards/AI Radar 日报 - 2026-03-10 - 20260310_032532.md`
+- 条目笔记：
+  - `outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md`
+  - `outputs/obsidian/projects/项目 - Aiddrag83 Aiden-Piercey---COMP1054WINTER2026.md`
+  - `outputs/obsidian/inbox/资讯 - Granite 4.0 1B Speech Compact, Multilingual, and Built for the Edge.md`
+  - `outputs/obsidian/inbox/资讯 - AI Didn't Break the Senior Engineer Pipeline. It Showed That One Never Existed.md`
+  - `outputs/obsidian/inbox/资讯 - OpenAI acquires Promptfoo to secure its AI agents.md`
+
+## V3 当前结论
+
+- V3 已达到“多源采集 + 去重导出 + 资讯统一落 inbox”的阶段目标
+- 真实数据源已经从 `arXiv / GitHub` 扩展到 `RSS / Hacker News / News`
+- 当前去重为启发式首版，已经能支撑 V3，但后续仍需更强的标题语义和 URL 归一化策略
+- 最新基线样本里重复数为 `0`，说明本次数据集没有撞到明显重复；这不代表 dedupe 可以省略
+- 收尾复测已完成：`python -m pytest -q`，结果 `6 passed`
+
+## V4 预备计划
+
+1. 增加 `failed_items` 调试输出
+2. 细化 `run_once / manual / scheduler` 的职责边界
+3. 开始落实 `cron / launchd` 预留方案
+4. 增加 `daily / weekly brief` 的自动化文档和脚本
+
+## V4 本轮计划
+
+1. 为 `summarizer / exporter / source` 失败增加结构化记录
+2. 增加 `scheduler` 模式的运行锁和 PID 元信息
+3. 新增 `cron / launchd` 配置生成模块和脚本
+4. 自动生成周报并写入 Obsidian
+5. 做真实运行并更新 [[版本迭代记录]]
+
+## V4 本轮已完成
+
+- 已新增 `FailedItemRecord`
+- 已新增 `DebugExporter`
+- 已新增 `ReportExporter`
+- 已新增 `RuntimeTaskManager`
+- 已新增 `cron_runner / launchd_runner`
+- 已让 `summarizer` 在单条失败时继续处理后续条目
+- 已让 `pipeline` 输出 `failed_items_path`、`weekly_brief_path`、`weekly_report_path`
+- 已让 `run_ai_radar.py` 作为默认 scheduler 入口
+- 已新增 `scripts/run_scheduler_once.sh`
+- 已新增 `scripts/generate_scheduler_assets.py`
+- 已让周报自动聚合最近 7 天运行日志
+
+## V4 实际运行命令
+
+```bash
+python -m compileall src scripts run_ai_radar.py run_manual.py run_once.py
+python -m pytest -q
+python scripts/generate_scheduler_assets.py --hour 9 --minute 0
+python run_ai_radar.py --max-items 1
+```
+
+## V4 实际产出
+
+- 运行 ID：`20260310_035123`
+- 合并结果：`data/processed/merged/merged_20260310_035123.json`
+- 去重结果：`data/processed/deduped/deduped_20260310_035123.json`
+- 重复报告：`data/processed/deduped/duplicates_20260310_035123.json`
+- 评分结果：`data/processed/scored/scored_20260310_035123.json`
+- 日报：`outputs/obsidian/dashboards/AI Radar 日报 - 2026-03-10 - 20260310_035123.md`
+- 周报：`outputs/obsidian/dashboards/AI Radar 周报 - 2026-W11.md`
+- 周报副本：`outputs/reports/weekly/AI Radar 周报 - 2026-W11.md`
+- 失败记录：`outputs/debug/failed_items/failed_items_20260310_035123.json`
+- 调度示例：
+  - `outputs/exports/markdown/scheduling/cron.example.txt`
+  - `outputs/exports/markdown/scheduling/ai_radar.launchd.plist`
+
+## V4 当前结论
+
+- V4 已达到“手动 / 单次 / 调度区分明确、失败可追踪、周报可自动生成”的阶段目标
+- 当前 scheduler 模式已经具备陈旧锁自动恢复，并已通过真实验证
+- `failed_items` 不仅会落盘，还已经通过真实失败样本回放恢复成功
+- `Hacker News` 已从简单关键词匹配升级为强/弱信号评分；当前命中项属于 AI 工程相关条目，而不是误判
+- `run_id` 同秒碰撞问题已修复为微秒级时间戳
+- V4 最终回归已通过：`python -m pytest -q`，结果 `16 passed`
+
+## V4 补充验证命令
+
+```bash
+python run_ai_radar.py --sources rss --max-items 1
+OLLAMA_HOST=http://127.0.0.1:9 python run_manual.py --sources rss --max-items 1
+python scripts/retry_failed_items.py --failed-file outputs/debug/failed_items/failed_items_20260310_040621.json --max-items 1
+python run_ai_radar.py --max-items 1
+python -m pytest -q
+```
+
+## 仓库整理与归档
+
+### 本轮目标
+
+- 把真正没用或命名混乱的测试类文件归档起来
+- 把每天的搜索结果改成按日期归档
+- 把每周的周报改成按周目录归档
+- 清理仓库里的缓存和早期平铺产物
+
+### 本轮决策
+
+- 保留 `tests/`：这些是正式自动化测试，不归档
+- 归档 `scripts/test_ollama.py`：它是早期的测试命名脚本，当前入口改为 `scripts/healthcheck_ollama.py`
+- 归档早期平铺 raw JSON：放入 `archive/legacy/raw_flat/`
+- 历史运行产物不删除，迁移到更清晰的日期/周目录
+
+### 本轮实际执行命令
+
+```bash
+python -m compileall src scripts run_ai_radar.py run_manual.py run_once.py
+python -m pytest -q
+python scripts/healthcheck_ollama.py
+python run_once.py --max-items 1
+```
+
+### 本轮实际产出
+
+- 最新运行 ID：`20260310_042523_551180`
+- 最新合并结果：`data/processed/merged/2026-03-10/merged_20260310_042523_551180.json`
+- 最新去重结果：`data/processed/deduped/2026-03-10/deduped_20260310_042523_551180.json`
+- 最新评分结果：`data/processed/scored/2026-03-10/scored_20260310_042523_551180.json`
+- 最新日报：`outputs/obsidian/dashboards/daily/2026-03-10/AI Radar 日报 - 2026-03-10 - 20260310_042523_551180.md`
+- 当前周报：`outputs/obsidian/dashboards/weekly/2026-W11/AI Radar 周报 - 2026-W11.md`
+- 当前周报副本：`outputs/reports/weekly/2026-W11/AI Radar 周报 - 2026-W11.md`
+- 最新失败记录：`outputs/debug/failed_items/2026-03-10/failed_items_20260310_042523_551180.json`
+- 最新运行日志：`logs/runs/2026-03-10/20260310_042523_551180.json`
+- 归档脚本：`archive/scripts/test_ollama.py`
+- 归档平铺数据：`archive/legacy/raw_flat/`
+
+### 本轮结论
+
+- 仓库已经从“结果平铺”整理成“按天/按周归档”
+- 新结构不只迁移了旧文件，也已经通过真实运行验证
+- 以后找某天结果，可以直接去对应日期目录，不需要在根目录翻一长串文件

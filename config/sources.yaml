@@ -7,3 +7,68 @@ sources:
     enabled: true
     query: "llm OR agent OR ai"
     max_items: 3
+  rss:
+    enabled: true
+    max_items: 3
+    feeds:
+      - name: Hugging Face Blog
+        url: "https://huggingface.co/blog/feed.xml"
+      - name: OpenAI News
+        url: "https://openai.com/news/rss.xml"
+  hackernews:
+    enabled: true
+    max_items: 3
+    scan_limit: 40
+    keywords:
+      - ai
+      - llm
+      - agent
+      - agents
+      - openai
+      - anthropic
+      - claude
+      - gemini
+      - deepseek
+      - model
+      - local ai
+      - multimodal
+    strong_keywords:
+      - openai
+      - anthropic
+      - claude
+      - gemini
+      - deepseek
+      - llm
+      - gpt
+      - mcp
+      - ollama
+      - prompt
+      - rag
+      - eval
+      - benchmark
+      - multimodal
+      - diffusion
+      - agentic
+      - ai generated
+      - local ai
+    weak_keywords:
+      - ai
+      - agent
+      - agents
+      - model
+    exclude_phrases:
+      - vpn
+      - proxy
+      - browser extension
+      - game jam
+    min_relevance_score: 2.5
+  news:
+    enabled: true
+    max_items: 3
+    feeds:
+      - name: MarkTechPost
+        url: "https://www.marktechpost.com/feed/"
+      - name: TechCrunch AI
+        url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+      - name: MIT Technology Review AI
+        url: "https://www.technologyreview.com/topic/artificial-intelligence/feed/"

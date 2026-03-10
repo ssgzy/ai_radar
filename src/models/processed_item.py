@@ -30,6 +30,9 @@ class ProcessedItem:
     recommendation_cn: str = ""
     score_reason_cn: str = ""
     model_name: str = ""
+    quality_decision: str = "keep"
+    quality_reason_cn: str = ""
+    topic_name: str = ""
     note_path: str | None = None
     prompt_path: str | None = None
     response_path: str | None = None
@@ -59,6 +62,9 @@ class ProcessedItem:
             "recommendation_cn": self.recommendation_cn,
             "score_reason_cn": self.score_reason_cn,
             "model_name": self.model_name,
+            "quality_decision": self.quality_decision,
+            "quality_reason_cn": self.quality_reason_cn,
+            "topic_name": self.topic_name,
             "note_path": self.note_path,
             "prompt_path": self.prompt_path,
             "response_path": self.response_path,

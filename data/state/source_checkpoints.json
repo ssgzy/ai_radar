@@ -1,12 +1,27 @@
 {
   "arxiv": {
-    "last_item_id": "2603.06577v1",
-    "last_title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
-    "updated_at": "2026-03-10T02:49:53+08:00"
+    "last_item_id": "2603.06578v1",
+    "last_title": "Multimodal Large Language Models as Image Classifiers",
+    "updated_at": "2026-03-10T04:47:04+08:00"
   },
   "github": {
-    "last_item_id": "850490697",
-    "last_title": "ed-donner/llm_engineering",
-    "updated_at": "2026-03-10T02:49:53+08:00"
+    "last_item_id": "1177238287",
+    "last_title": "MansiMore99/patronet-llm-grpo-env",
+    "updated_at": "2026-03-10T04:47:04+08:00"
+  },
+  "rss": {
+    "last_item_id": "ec92a6e121b60abc",
+    "last_title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+    "updated_at": "2026-03-10T04:47:04+08:00"
+  },
+  "hackernews": {
+    "last_item_id": "47312728",
+    "last_title": "Show HN: The Mog Programming Language",
+    "updated_at": "2026-03-10T04:48:26+08:00"
+  },
+  "news": {
+    "last_item_id": "ff3f0de1df93df7e",
+    "last_title": "Andrew Ng’s Team Releases Context Hub: An Open Source Tool that Gives Your Coding Agent the Up-to-Date API Documentation It Needs",
+    "updated_at": "2026-03-10T04:48:26+08:00"
   }
 }

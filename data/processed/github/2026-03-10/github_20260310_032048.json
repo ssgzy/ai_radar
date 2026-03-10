@@ -1,0 +1,52 @@
+[
+  {
+    "source": "github",
+    "item_id": "1177180276",
+    "title": "gabemontero-appstudio-test-org/template-agentic-sample-gitops",
+    "url": "https://github.com/gabemontero-appstudio-test-org/template-agentic-sample-gitops",
+    "published_at": "2026-03-09T19:21:06Z",
+    "authors": [
+      "gabemontero-appstudio-test-org"
+    ],
+    "raw_content": "仓库名称：gabemontero-appstudio-test-org/template-agentic-sample-gitops\n仓库描述：GitOps repository for Llama Stack Agentic - llama-stack-template-agentic-sample\n主要语言：未知\nStars：0",
+    "content_overview_cn": "这是一个 GitOps 存储库，用于 Llama Stack 代理（llama-stack-template-agentic-sample）。",
+    "problem_cn": "该存储库试图提供一个 GitOps 解决方案，用于管理和部署应用程序。",
+    "why_it_matters_cn": "该存储库可能包含有关 GitOps 和 Llama Stack 代理的最新信息和示例，对于想了解或实践 GitOps 和 Llama Stack 的人们来说是有价值的。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解 GitOps 和 Llama Stack 的最新进展和示例可以帮助我更好地了解和应用这些技术，从而提高我的工作效率和技能水平。",
+    "keywords": [
+      "GitOps",
+      "Llama Stack",
+      "代理",
+      "示例",
+      "应用程序",
+      "管理",
+      "部署"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "Agent",
+      "开发工具"
+    ],
+    "quote_cn": "\"GitOps 存储库，用于 Llama Stack 代理\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 5.0,
+      "personal_relevance": 5.8
+    },
+    "total_score": 6.0,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 6.0。新颖性较强（7.1）；个人相关性较强（5.8）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032048_github_1177180276_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032048_github_1177180276_response.txt",
+    "extra": {
+      "description": "GitOps repository for Llama Stack Agentic - llama-stack-template-agentic-sample",
+      "language": "未知",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "source": "github",
+    "item_id": "1177238287",
+    "title": "MansiMore99/patronet-llm-grpo-env",
+    "url": "https://github.com/MansiMore99/patronet-llm-grpo-env",
+    "published_at": "2026-03-09T20:45:34Z",
+    "authors": [
+      "MansiMore99"
+    ],
+    "raw_content": "仓库名称：MansiMore99/patronet-llm-grpo-env\n仓库描述：LLM-centric emergency triage RL env implementing an OpenEnv-compatible HTTP interface, GRPO rollouts, and dense/sparse verifier rewards over full trajectories.\n主要语言：未知\nStars：0",
+    "content_overview_cn": "该仓库是 MansiMore99 创建的名为 patronet-llm-grpo-env 的项目，它是一个基于人类类型（LLM）紧急的强化学习环境，实现了一个兼容 HTTP 接口的 OpenEnv，并支持 GRPO 部署和密集/稀疏的验证奖励。",
+    "problem_cn": "该项目试图解决如何使用强化学习来实现 LLM 类型的紧急，并提供了一个可以部署和验证的环境。",
+    "why_it_matters_cn": "该项目可以为人工智能和医疗保健领域带来重要的影响，尤其是在紧急方面。它可以帮助开发更好的 AI 系统，以提高医疗保健服务的质量和效率。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，该项目可以帮助我了解和学习如何使用强化学习来解决实际问题，尤其是在医疗保健领域。",
+    "keywords": [
+      "强化学习（Reinforcement Learning）",
+      "LLM",
+      "紧急",
+      "GRPO",
+      "HTTP 接口",
+      "验证奖励。"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "大模型"
+    ],
+    "quote_cn": "该项目实现了一个用于 LLM 类型紧急的强化学习环境。",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 4.4,
+      "personal_relevance": 5.8
+    },
+    "total_score": 5.4,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.4。新颖性较强（5.8）；个人相关性较强（5.8）。",
+    "model_name": "mistral:7b",
+    "quality_decision": "keep",
+    "quality_reason_cn": "核心来源默认保留。",
+    "topic_name": "",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/2026-03-10/20260310_044526_154819_github_1177238287_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/2026-03-10/20260310_044526_154819_github_1177238287_response.txt",
+    "extra": {
+      "description": "LLM-centric emergency triage RL env implementing an OpenEnv-compatible HTTP interface, GRPO rollouts, and dense/sparse verifier rewards over full trajectories.",
+      "language": "未知",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "quality_gate": {
+        "keep": true,
+        "adjusted_score": 5.4,
+        "reason_cn": "核心来源默认保留。",
+        "focus_tag_hits": [],
+        "strong_keyword_hits": [],
+        "medium_keyword_hits": [],
+        "blocked_hits": []
+      }
+    }
+  }
+]

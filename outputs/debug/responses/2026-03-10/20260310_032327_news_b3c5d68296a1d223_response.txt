@@ -1,0 +1,17 @@
+【内容概述】
+OpenAI 收购 Promptfoo，这表明边缘实验室正在努力证明其技术可以在关键业务操作中安全使用。
+
+【解决的问题】
+这项行动试图解决如何使 AI 技术在关键业务操作中安全使用的问题，并且通过收购 Promptfoo 来加强自己的 AI 代理。
+
+【为什么值得关注】
+这项新闻值得关注，因为它反映了 AI 技术在关键业务操作中的发展趋势，同时也是 OpenAI 在增强其 AI 代理能力方面的一步进一步。
+
+【适合我关注的原因】
+作为个人 AI 情报系统使用者，我应该关注这项新闻，因为它可能会影响 AI 技术在关键业务操作中的应用，并且也可能会影响我使用的 AI 情报系统的性能和安全性。
+
+【关键词】
+OpenAI、Promptfoo、AI 代理、关键业务操作、安全性。
+
+【简洁引用】
+"frontier labs are scrambling to prove their technology can be used safely in critical business operations."

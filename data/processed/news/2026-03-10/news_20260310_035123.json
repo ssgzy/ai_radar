@@ -1,0 +1,51 @@
+[
+  {
+    "source": "news",
+    "item_id": "752c5043c9ed400c",
+    "title": "Anthropic launches code review tool to check flood of AI-generated code",
+    "url": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/",
+    "published_at": "2026-03-09T19:41:34+00:00",
+    "authors": [
+      "Rebecca Bellan"
+    ],
+    "raw_content": "Anthropic launched Code Review in Claude Code, a multi-agent system that automatically analyzes AI-generated code, flags logic errors, and helps enterprise developers manage the growing volume of code produced with AI.",
+    "content_overview_cn": "Anthropic 发布了一款代码审查工具，用于在 Claude Code 中自动分析 AI 生成的代码，标记逻辑错误，以帮助企业开发人员管理 AI 产生的代码量。",
+    "problem_cn": "该工具试图解决企业开发人员面临的问题，即 AI 生成的代码量过多，难以管理和审查，从而导致逻辑错误。",
+    "why_it_matters_cn": "该工具的出现有助于提高 AI 生成的代码质量，减少逻辑错误，提高开发效率，并降低维护成本。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，了解如何提高 AI 生成的代码质量对于我们的系统和项目非常重要，因此该工具的出现值得关注。",
+    "keywords": [
+      "Anthropic",
+      "Claude Code",
+      "AI-generated code",
+      "代码审查工具",
+      "逻辑错误",
+      "企业开发人员."
+    ],
+    "tags": [
+      "新闻站点",
+      "Agent",
+      "大模型",
+      "开发工具"
+    ],
+    "quote_cn": "Anthropic 发布了一款自动分析 AI 生成的代码的工具，用于帮助企业开发人员管理代码量，减少逻辑错误。",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 3.6,
+      "personal_relevance": 5.4
+    },
+    "total_score": 5.5,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 5.5。新颖性较强（7.1）；个人相关性较强（5.4）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_035123_news_752c5043c9ed400c_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_035123_news_752c5043c9ed400c_response.txt",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100624",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

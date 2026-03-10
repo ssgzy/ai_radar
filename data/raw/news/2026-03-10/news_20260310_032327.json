@@ -1,0 +1,19 @@
+[
+  {
+    "source": "news",
+    "item_id": "b3c5d68296a1d223",
+    "title": "OpenAI acquires Promptfoo to secure its AI agents",
+    "url": "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/",
+    "published_at": "2026-03-09T17:49:04+00:00",
+    "authors": [
+      "Tim Fernholz"
+    ],
+    "content": "This deal underscores how frontier labs are scrambling to prove their technology can be used safely in critical business operations.",
+    "extra": {
+      "entry_id": "https://techcrunch.com/?p=3100531",
+      "feed_name": "TechCrunch AI",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_feed_title": "AI News & Artificial Intelligence | TechCrunch"
+    }
+  }
+]

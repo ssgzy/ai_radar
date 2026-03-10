@@ -1,0 +1,54 @@
+[
+  {
+    "source": "hackernews",
+    "item_id": "47312728",
+    "title": "Show HN: The Mog Programming Language",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 6.7,
+    "adjusted_score": 10.0,
+    "focus_tag_hits": [
+      "Agent",
+      "大模型",
+      "开发工具"
+    ],
+    "strong_keyword_hits": [
+      "agent",
+      "llm",
+      "codex"
+    ],
+    "medium_keyword_hits": [
+      "code"
+    ],
+    "blocked_hits": [],
+    "reason_cn": "调节后分数 10.0 达到阈值 5.6；命中主题标签：Agent, 大模型, 开发工具；命中强信号：agent, llm, codex"
+  },
+  {
+    "source": "news",
+    "item_id": "ff3f0de1df93df7e",
+    "title": "Andrew Ng’s Team Releases Context Hub: An Open Source Tool that Gives Your Coding Agent the Up-to-Date API Documentation It Needs",
+    "keep": true,
+    "topic_name": "",
+    "total_score": 8.5,
+    "adjusted_score": 10.0,
+    "focus_tag_hits": [
+      "Agent",
+      "大模型",
+      "评测与基准",
+      "开发工具",
+      "自动化"
+    ],
+    "strong_keyword_hits": [
+      "agent",
+      "llm",
+      "large language model"
+    ],
+    "medium_keyword_hits": [
+      "developer",
+      "workflow",
+      "code"
+    ],
+    "blocked_hits": [],
+    "reason_cn": "调节后分数 10.0 达到阈值 5.0；命中主题标签：Agent, 大模型, 评测与基准；命中强信号：agent, llm, large language model"
+  }
+]

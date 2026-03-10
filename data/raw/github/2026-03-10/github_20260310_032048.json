@@ -1,0 +1,20 @@
+[
+  {
+    "source": "github",
+    "item_id": "1177180276",
+    "title": "gabemontero-appstudio-test-org/template-agentic-sample-gitops",
+    "url": "https://github.com/gabemontero-appstudio-test-org/template-agentic-sample-gitops",
+    "published_at": "2026-03-09T19:21:06Z",
+    "authors": [
+      "gabemontero-appstudio-test-org"
+    ],
+    "content": "仓库名称：gabemontero-appstudio-test-org/template-agentic-sample-gitops\n仓库描述：GitOps repository for Llama Stack Agentic - llama-stack-template-agentic-sample\n主要语言：未知\nStars：0",
+    "extra": {
+      "description": "GitOps repository for Llama Stack Agentic - llama-stack-template-agentic-sample",
+      "language": "未知",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

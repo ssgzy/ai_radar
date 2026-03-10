@@ -1,0 +1,49 @@
+[
+  {
+    "source": "github",
+    "item_id": "1140595342",
+    "title": "Aiddrag83/Aiden-Piercey---COMP1054WINTER2026",
+    "url": "https://github.com/Aiddrag83/Aiden-Piercey---COMP1054WINTER2026",
+    "published_at": "2026-03-09T19:25:47Z",
+    "authors": [
+      "Aiddrag83"
+    ],
+    "raw_content": "仓库名称：Aiddrag83/Aiden-Piercey---COMP1054WINTER2026\n仓库描述：仓库暂时没有填写描述。\n主要语言：HTML\nStars：0",
+    "content_overview_cn": "该内容是关于一个 GitHub 仓库，名为 Aiddrag83/Aiden-Piercey---COMP1054WINTER2026，该仓库目前没有填写描述。",
+    "problem_cn": "该仓库可能试图解决或包含有关 COMP1054 的 Winter 2026 学期的资源或代码。",
+    "why_it_matters_cn": "该仓库可能包含有关 COMP1054 课程的实用资源或代码，对于那些正在学习或研究 COMP1054 的人来说可能很有价值。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，如果你正在学习或研究 COMP1054，该仓库可能包含有用的资源或代码，值得关注。",
+    "keywords": [
+      "COMP1054",
+      "Winter 2026",
+      "GitHub",
+      "仓库",
+      "资源",
+      "代码"
+    ],
+    "tags": [
+      "GitHub 项目"
+    ],
+    "quote_cn": "该仓库可能包含有关 COMP1054 Winter 2026 学期的实用资源或代码。",
+    "score_breakdown": {
+      "novelty": 5.8,
+      "execution_signal": 4.4,
+      "personal_relevance": 3.9
+    },
+    "total_score": 4.7,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.7。新颖性较强（5.8）；落地信号较强（4.4）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032532_github_1140595342_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032532_github_1140595342_response.txt",
+    "extra": {
+      "description": "仓库暂时没有填写描述。",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 1
+    }
+  }
+]

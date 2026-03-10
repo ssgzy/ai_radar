@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.ai_radar.scheduler</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/Caskroom/miniconda/base/bin/python</string>
+    <string>/Users/sam/Documents/AI Models/ai_radar/run_ai_radar.py</string>
+    <string>--mode</string>
+    <string>scheduler</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/sam/Documents/AI Models/ai_radar</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/sam/Documents/AI Models/ai_radar/logs/launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/sam/Documents/AI Models/ai_radar/logs/launchd.stderr.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONPATH</key>
+    <string>/Users/sam/Documents/AI Models/ai_radar</string>
+  </dict>
+</dict>
+</plist>

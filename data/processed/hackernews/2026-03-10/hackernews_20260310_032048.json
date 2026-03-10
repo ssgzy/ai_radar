@@ -1,0 +1,46 @@
+[
+  {
+    "source": "hackernews",
+    "item_id": "47312329",
+    "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
+    "url": "https://fixfest.therestartproject.org/",
+    "published_at": "2026-03-09T17:34:27+00:00",
+    "authors": [
+      "robtherobber"
+    ],
+    "raw_content": "标题：Fixfest is a global gathering of repairers, tinkerers, and activists\n文本：无正文\n分数：90\n评论数：8",
+    "content_overview_cn": "Fixfest 是一个全球范围内的修理人员、搭配手和活动家的聚会。",
+    "problem_cn": "Fixfest 试图解决电子产品寿命过短和浪费资源的问题，并促进修理和再使用。",
+    "why_it_matters_cn": "Fixfest 值得关注，因为它提供了一个平台，让修理人员和搭配手分享知识和技能，并促进电子产品的再使用，从而减少浪费和提高可持续发展水平。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，Fixfest 值得关注，因为它可以提供有关电子产品修理和再使用的最新信息和技术，并可以帮助我们做出更好的选择，从而实现更高的可持续发展水平。",
+    "keywords": [
+      "Fixfest",
+      "修理",
+      "再使用",
+      "电子产品",
+      "可持续发展"
+    ],
+    "tags": [
+      "Hacker News"
+    ],
+    "quote_cn": "Fixfest: 全球修理人员聚会，促进电子产品再使用。",
+    "score_breakdown": {
+      "novelty": 6.6,
+      "execution_signal": 3.0,
+      "personal_relevance": 3.0
+    },
+    "total_score": 4.3,
+    "priority_level": "低优先级",
+    "recommendation_cn": "先保留记录，不建议本轮投入太多时间。",
+    "score_reason_cn": "总分 4.3。新颖性较强（6.6）；落地信号较强（3.0）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032048_hackernews_47312329_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032048_hackernews_47312329_response.txt",
+    "extra": {
+      "hn_score": 90,
+      "hn_comments": 8,
+      "hn_item_url": "https://news.ycombinator.com/item?id=47312329"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "source": "github",
+    "item_id": "1155606582",
+    "title": "VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026",
+    "url": "https://github.com/VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026",
+    "published_at": "2026-03-09T19:23:38Z",
+    "authors": [
+      "VedikaPunjabi"
+    ],
+    "raw_content": "仓库名称：VedikaPunjabi/Advanced-GenerativeAI-Internship-February-2026\n仓库描述：Central repository for my “Agentic AI\" internship tasks at Innomatics Research Labs (2026).\n主要语言：Jupyter Notebook\nStars：0",
+    "content_overview_cn": "这条信息是关于一位名为 Vedika Punjabi 的学生在 Innomatics Research Labs 的高级生成式人工智能实习任务的中央仓库。",
+    "problem_cn": "这个仓库试图解决如何使用 Jupyter Notebook 实现高级生成式人工智能的问题，以完成该实习任务。",
+    "why_it_matters_cn": "这个仓库值得关注，因为它可能包含有关高级生成式人工智能的有用信息和实现方法，对于个人或企业的 AI 研究和开发具有重要意义。",
+    "why_follow_cn": "作为个人 AI 情报系统使用者，我应该关注这个仓库，因为它可能提供有关高级生成式人工智能的实用信息和实现方法，可以帮助我们更好地了解和应用这种技术。",
+    "keywords": [
+      "高级生成式人工智能",
+      "Jupyter Notebook",
+      "Innomatics Research Labs",
+      "实习任务"
+    ],
+    "tags": [
+      "GitHub 项目",
+      "Agent",
+      "开发工具"
+    ],
+    "quote_cn": "\"Central repository for my“Agentic AI\" internship tasks at Innomatics Research Labs\"",
+    "score_breakdown": {
+      "novelty": 7.1,
+      "execution_signal": 5.0,
+      "personal_relevance": 6.9
+    },
+    "total_score": 6.4,
+    "priority_level": "快速浏览",
+    "recommendation_cn": "建议先看日报摘要，需要时再回到原文。",
+    "score_reason_cn": "总分 6.4。新颖性较强（7.1）；个人相关性较强（6.9）。",
+    "model_name": "mistral:7b",
+    "note_path": null,
+    "prompt_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/prompts/20260310_032327_github_1155606582_prompt.txt",
+    "response_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/responses/20260310_032327_github_1155606582_response.txt",
+    "extra": {
+      "description": "Central repository for my “Agentic AI\" internship tasks at Innomatics Research Labs (2026).",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0
+    }
+  }
+]

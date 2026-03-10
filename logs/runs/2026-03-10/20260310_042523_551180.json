@@ -1,0 +1,180 @@
+{
+  "run_id": "20260310_042523_551180",
+  "run_mode": "once",
+  "started_at": "2026-03-10T04:25:23+08:00",
+  "completed_at": "2026-03-10T04:26:50+08:00",
+  "duration_seconds": 86.93,
+  "sources": [
+    {
+      "source": "arxiv",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/arxiv/2026-03-10/arxiv_20260310_042523_551180.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/arxiv/2026-03-10/arxiv_20260310_042523_551180.json",
+      "started_at": "2026-03-10T04:25:23+08:00",
+      "completed_at": "2026-03-10T04:25:45+08:00",
+      "duration_seconds": 21.52,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1,
+        "failed": 0
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "github",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/github/2026-03-10/github_20260310_042523_551180.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/github/2026-03-10/github_20260310_042523_551180.json",
+      "started_at": "2026-03-10T04:25:45+08:00",
+      "completed_at": "2026-03-10T04:25:55+08:00",
+      "duration_seconds": 10.74,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1,
+        "failed": 0
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - INQUISITIVE-AI inquisitive-ai-agent.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "rss",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/rss/2026-03-10/rss_20260310_042523_551180.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/rss/2026-03-10/rss_20260310_042523_551180.json",
+      "started_at": "2026-03-10T04:25:55+08:00",
+      "completed_at": "2026-03-10T04:26:17+08:00",
+      "duration_seconds": 21.49,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1,
+        "failed": 0
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Granite 4.0 1B Speech Compact, Multilingual, and Built for the Edge.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "hackernews",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/hackernews/2026-03-10/hackernews_20260310_042523_551180.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/hackernews/2026-03-10/hackernews_20260310_042523_551180.json",
+      "started_at": "2026-03-10T04:26:17+08:00",
+      "completed_at": "2026-03-10T04:26:39+08:00",
+      "duration_seconds": 22.38,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1,
+        "failed": 0
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Show HN The Mog Programming Language.md"
+      ],
+      "errors": [],
+      "extra": {}
+    },
+    {
+      "source": "news",
+      "raw_count": 1,
+      "processed_count": 1,
+      "raw_path": "/Users/sam/Documents/AI Models/ai_radar/data/raw/news/2026-03-10/news_20260310_042523_551180.json",
+      "processed_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/news/2026-03-10/news_20260310_042523_551180.json",
+      "started_at": "2026-03-10T04:26:39+08:00",
+      "completed_at": "2026-03-10T04:26:50+08:00",
+      "duration_seconds": 10.79,
+      "stage_stats": {
+        "collected": 1,
+        "summarized": 1,
+        "tagged": 1,
+        "scored": 1,
+        "deduped": 1,
+        "exported": 1,
+        "failed": 0
+      },
+      "note_paths": [
+        "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Anthropic launches code review tool to check flood of AI-generated code.md"
+      ],
+      "errors": [],
+      "extra": {}
+    }
+  ],
+  "total_processed": 5,
+  "total_deduped": 5,
+  "failed_items_count": 0,
+  "duplicate_count": 0,
+  "merged_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/merged/2026-03-10/merged_20260310_042523_551180.json",
+  "deduped_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/deduped/2026-03-10/deduped_20260310_042523_551180.json",
+  "duplicate_report_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/deduped/2026-03-10/duplicates_20260310_042523_551180.json",
+  "scored_path": "/Users/sam/Documents/AI Models/ai_radar/data/processed/scored/2026-03-10/scored_20260310_042523_551180.json",
+  "daily_brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/daily/2026-03-10/AI Radar 日报 - 2026-03-10 - 20260310_042523_551180.md",
+  "brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/daily/2026-03-10/AI Radar 日报 - 2026-03-10 - 20260310_042523_551180.md",
+  "weekly_brief_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/dashboards/weekly/2026-W11/AI Radar 周报 - 2026-W11.md",
+  "weekly_report_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/reports/weekly/2026-W11/AI Radar 周报 - 2026-W11.md",
+  "failed_items_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/debug/failed_items/2026-03-10/failed_items_20260310_042523_551180.json",
+  "runtime_context": {},
+  "top_items": [
+    {
+      "title": "Multimodal Large Language Models as Image Classifiers",
+      "source": "arxiv",
+      "total_score": 8.9,
+      "priority_level": "高优先级跟进",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/papers/论文 - Multimodal Large Language Models as Image Classifiers.md"
+    },
+    {
+      "title": "Show HN: The Mog Programming Language",
+      "source": "hackernews",
+      "total_score": 6.7,
+      "priority_level": "重点关注",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Show HN The Mog Programming Language.md"
+    },
+    {
+      "title": "INQUISITIVE-AI/inquisitive-ai-agent",
+      "source": "github",
+      "total_score": 5.8,
+      "priority_level": "快速浏览",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/projects/项目 - INQUISITIVE-AI inquisitive-ai-agent.md"
+    },
+    {
+      "title": "Anthropic launches code review tool to check flood of AI-generated code",
+      "source": "news",
+      "total_score": 5.5,
+      "priority_level": "快速浏览",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Anthropic launches code review tool to check flood of AI-generated code.md"
+    },
+    {
+      "title": "Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge",
+      "source": "rss",
+      "total_score": 4.0,
+      "priority_level": "低优先级",
+      "note_path": "/Users/sam/Documents/AI Models/ai_radar/outputs/obsidian/inbox/资讯 - Granite 4.0 1B Speech Compact, Multilingual, and Built for the Edge.md"
+    }
+  ]
+}
